@@ -4,7 +4,7 @@ const Reservation = () => {
   return (
     <div>
       <p>
-    Welcome to Reservation page
+    Welcome to Reservation page2
       </p>
     </div>
   )
