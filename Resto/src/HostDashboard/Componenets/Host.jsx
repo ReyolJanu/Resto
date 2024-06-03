@@ -3,7 +3,7 @@ import React from 'react'
 const Host = () => {
   return (
     <div>
-      <p>Kalu</p>
+      <p>Kakka</p>
     </div>
   )
 }
