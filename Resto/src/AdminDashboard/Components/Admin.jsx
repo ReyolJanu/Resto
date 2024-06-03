@@ -4,6 +4,7 @@ const Admin = () => {
   return (
     <div>
       <p>This is an admin page</p>
+      
     </div>
     
   )
