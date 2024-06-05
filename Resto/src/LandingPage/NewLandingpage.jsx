@@ -46,20 +46,20 @@ export default function NewLandingpage() {
                 <div className="nav-links">
                     <ul>
                         <li><a href='#'>Home</a></li>
-                        <li><a href='#sec4'>Register</a></li>
+                        {/* <li><a href='#sec4'>Register</a></li> */}
                         <li><a href='#sec2'>Login</a></li>
                         <li><a href='#sec5'>About</a></li>
                         <li><a href='#sec3'>Booking Now</a></li>
                     </ul>
                 </div>
-                <div
+                {/* <div
                     className="nav-profile"
                     style={{
                         backgroundImage: `url(${profile})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}>
-                </div>
+                </div> */}
             </div>
             {/* --------------------------------------Home------------------------------------------ */}
             <div className="home" style={backgroundImageStyle}>
