@@ -49,7 +49,7 @@ export default function NewLandingpage() {
                         {/* <li><a href='#sec4'>Register</a></li> */}
                         <li><a href='#sec2'>Login</a></li>
                         <li><a href='#sec5'>About</a></li>
-                        <li><a href='#sec3'>Booking Now</a></li>
+                        <li><a href='#sec3'>Book Now</a></li>
                     </ul>
                 </div>
                 {/* <div
@@ -85,8 +85,7 @@ export default function NewLandingpage() {
                 <p className='sec2-para'>simple description about our pre ordering<br />
                     system simple description about our pre ordering<br />
                     system simple description about our pre ordering<br />
-                    system simple description about our pre ordering<br />
-                    system</p>
+                    </p>
             <button className='sec2-btn'>Learn More</button>
                 </div>   
             </div>
