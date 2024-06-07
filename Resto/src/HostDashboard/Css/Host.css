@@ -1,0 +1,64 @@
+:root {
+    --body-background: #d9d9d9;
+    --gray:rgb(80, 80, 80);
+    --red:#bd2026;   
+    --black:#121212;   
+    --white:white;
+    --resto-word: "Oswald", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --Poppins: "Poppins", sans-serif;
+    --Martel: "Martel Sans", sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    border: none;
+    text-decoration:none;
+    box-sizing:border-box;
+    font-family:var(--Poppins);
+}
+
+
+.left{
+    display:flex;
+}
+img {
+    width:45px;
+    height:40px;
+    border-radius:120px;
+}
+.hostimage{
+    text-align:center;
+    display:flex;
+    margin:10px;
+}
+span{
+    font-size:20px;
+    padding-left:20px;
+    margin-right:20px;
+}
+nav-items{
+    color: --white;
+    width:70px;
+    height:40px;
+    position:relative;
+    top:14px;
+    text-align:center;
+}
+nav{
+   position:relative;
+   top:0;
+   bottom:0;
+   height:100vh;
+   left:0;
+   background-color:var(--black);
+   width:280px;
+   overflow:hidden;
+}   
+a{
+    position:relative;
+    display:table;
+    width:280px;
+    padding:10px;
+}

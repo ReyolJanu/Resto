@@ -1,58 +1,63 @@
 import React from 'react'
 import '../Css/Host.css'
+import { FaBeer } from 'react-icons/fa';
+import hostimage from '../images/host3.jpg';
 const Host = () => {
   return (
     <div>
       <section>
         <div class="left">
 
+          <nav> 
+        {/* restaurant Host dashboard title  */}
           <div class="id">
-          <img src="" alt="hostimage"></img>
+          <img  class="hostimage"src={hostimage} ></img>
           <span class="nav-items"><b>Restaurant Host</b></span>
           </div>
-
-          <nav>  
+        {/* menus */}
           <ul>
           <li><a href="#"> 
-          <i class=""></i>
-          <span class="nav-items"><b>Dashboard</b></span>
+          <i class="icon"><FaBeer /></i>
+          <span class="nav-items">Dashboard</span>
           </a> </li>
           <li><a href="#">
-          <i class=""></i>
-          <span class="nav-items"><b>Reservation</b></span>
+          <i class="icon"><FaBeer /></i>
+          <span class="nav-items">Reservation</span>
           </a></li>
           <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Tables</b></span>
+          <i class="icon"><FaBeer /></i>
+          <span class="nav-items">Tables</span>
           </a></li>
           <li><a href="#">
-          <i class=""></i>
-          <span class="nav-items"><b>Notification</b></span>
+          <i class="icon"><FaBeer /></i>
+          <span class="nav-items">Notification</span>
           </a></li>
           <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Feedback</b></span>
+          <i class="icon"><FaBeer /></i> 
+          <span class="nav-items">Feedback</span>
           </a></li>
           <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Settings</b></span>
+          <i class="icon"><FaBeer /></i> 
+          <span class="nav-items">Settings</span>
           </a></li>
           <li><a href="#" class="logout">
-          <i class=""></i> 
-          <span class="nav-items"><b>Logout</b></span>
+          <i class="icon"><FaBeer /></i>  
+          <span class="nav-items">Logout</span>
           </a></li>
          </ul>
          </nav>
 
         </div>
+      {/* Resto logo */}
         <div class="top">
            <div class="logo">
-              <img src="" alt="logoimage"></img>
+              <img class="logoimage" src="" ></img>
            </div>
            <div class="profile">
               <img src="" alt="profileimage"></img>
            </div>
         </div>
+        {/* body content */}
         <div class="main">
           <div class="carts">
             <p class="title">Customers</p>
@@ -82,4 +87,4 @@ const Host = () => {
   )
 }
 
-export default Host
+export default Host;
