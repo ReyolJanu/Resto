@@ -5,8 +5,16 @@ const KitchenStaff = () => {
     <div>KitchenStaff
 
       dadfsdfswv
+
+
+     <div>
+      Hi Joy
+     </div>
+
     </div>
   )
+
 }
+
 
 export default KitchenStaff
