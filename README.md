@@ -1,2 +1,0 @@
-# Resto
-group project
