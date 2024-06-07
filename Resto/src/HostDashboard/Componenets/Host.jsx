@@ -12,7 +12,7 @@ const Host = () => {
        
           <div class="id">
           <img  class="hostimage"src={hostimage} ></img>
-          <span class="nav-items"><b>Restaurant Host ai</b></span>
+          <span class="nav-items"><b>Restaurant Host </b></span>
           </div>
        
           <ul>
