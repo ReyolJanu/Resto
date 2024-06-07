@@ -9,12 +9,12 @@ const Host = () => {
         <div class="left">
 
           <nav> 
-        {/* restaurant Host dashboard title  */}
+       
           <div class="id">
           <img  class="hostimage"src={hostimage} ></img>
           <span class="nav-items"><b>Restaurant Host</b></span>
           </div>
-        {/* menus */}
+       
           <ul>
           <li><a href="#"> 
           <i class="icon"><FaBeer /></i>
@@ -48,7 +48,7 @@ const Host = () => {
          </nav>
 
         </div>
-      {/* Resto logo */}
+    
         <div class="top">
            <div class="logo">
               <img class="logoimage" src="" ></img>
@@ -57,7 +57,7 @@ const Host = () => {
               <img src="" alt="profileimage"></img>
            </div>
         </div>
-        {/* body content */}
+       
         <div class="main">
           <div class="carts">
             <p class="title">Customers</p>
@@ -87,4 +87,4 @@ const Host = () => {
   )
 }
 
-export default Host;
+export default Host
