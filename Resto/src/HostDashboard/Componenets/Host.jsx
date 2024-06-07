@@ -72,7 +72,7 @@ const Host = () => {
           </div>
 
           <div class="graph">
-            
+
           </div>
         </div>
 
