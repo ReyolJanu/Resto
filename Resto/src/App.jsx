@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Admin from './Admin/Admin'
 //import Host from './HostDashboard/Componenets/Host'
 //import Reservation from './ReservationPage/Components/Reservation'
@@ -6,15 +7,25 @@ import Admin from './Admin/Admin'
 //import { Customer } from './Customer Dashboard/Components/Customer'
 //import NewLandingpage from './LandingPage/NewLandingpage'
 
+
 export const App = () => {
   return (
     <>
+
+
+
       <Admin/>
-      {/* <NewLandingpage />
+      {/*<NewLandingpage />
       <Reservation/>
-      <KitchenStaff/>
+      
       <Customer/>
-      <Host/> */}
+      <Host/>
+      <KitchenStaff/>
+
+      <Customer/>
+      <Host/>
+        */}
+
     </>
   )
 }
