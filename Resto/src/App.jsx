@@ -14,7 +14,7 @@ export const App = () => {
 
 
 
-      <Admin/>
+      <Host/>
       {/*<NewLandingpage />
       <Reservation/>
       
@@ -23,7 +23,7 @@ export const App = () => {
       <KitchenStaff/>
 
       <Customer/>
-      <Host/>
+      <Admin/>
         */}
 
     </>
