@@ -41,7 +41,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10; /* Ensure it's above other content */
+    z-index: 20; /* Ensure it's above other content */
     background-color: var(--white); /* Set your desired background color */
     display: flex;
     justify-content: space-between;
