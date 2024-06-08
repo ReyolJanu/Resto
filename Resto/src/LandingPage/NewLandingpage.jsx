@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Modal from 'react-modal';
 import './NewLandingpage.css';
 import logo from './images/logo.png';
 import profile from './images/default-profile.png';
@@ -17,8 +18,11 @@ import click from './icons/click.png';
 import food from './icons/foodicon.png';
 import login from './icons/login.png';
 
+Modal.setAppElement('#root'); // Accessibility
+
 export default function NewLandingpage() {
     const [currentImage, setCurrentImage] = useState(1);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
     const imagePaths = [home1, home2, home3];
 
     const changeBackgroundImage = () => {
@@ -29,6 +33,14 @@ export default function NewLandingpage() {
         const interval = setInterval(changeBackgroundImage, 3000);
         return () => clearInterval(interval);
     }, []);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    };
 
     const backgroundImageStyle = {
         width: '100vw',
@@ -46,22 +58,13 @@ export default function NewLandingpage() {
                 <div className="nav-links">
                     <ul>
                         <li><a href='#'>Home</a></li>
-                        {/* <li><a href='#sec4'>Register</a></li> */}
                         <li><a href='#sec2'>Login</a></li>
-                        <li><a href='#sec5'>About</a></li>
+                        <li><a href='#sec5'>About</a></li> 
                         <li><a href='#sec3'>Book Now</a></li>
                     </ul>
                 </div>
-                {/* <div
-                    className="nav-profile"
-                    style={{
-                        backgroundImage: `url(${profile})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'
-                    }}>
-                </div> */}
             </div>
-            {/* --------------------------------------Home------------------------------------------ */}
+
             <div className="home" style={backgroundImageStyle}>
                 <div className="Home-content">
                     <p className='Resto'>RESTO</p>
@@ -69,7 +72,6 @@ export default function NewLandingpage() {
                 </div>
             </div>
 
-             {/* ----------------------------------------sec2 -------------------------------------- */}
             <div className='sec2' id='sec2'>
                 <div className="sec2-div1">
                     <img src={blob} className='blob'/>
@@ -90,10 +92,8 @@ export default function NewLandingpage() {
                 </div>   
             </div>
 
-              {/* ----------------------------------------sec2 -------------------------------------- */}
-
             <div className="sec3" id='sec3'>
-            <div class="container1">
+            <div className="container1">
                 <div>
                 <div
                     className="sec3-image"
@@ -131,7 +131,7 @@ export default function NewLandingpage() {
                     <div className="stars">stars</div>
                 </div>
             </div>
-            <div class="container2">
+            <div className="container2">
                 <div>
                 <div
                     className="sec3-image"
@@ -171,7 +171,6 @@ export default function NewLandingpage() {
             </div>
             </div>
 
-             {/* ----------------------------------------sec4 -------------------------------------- */}
              <div className="sec4" id='sec4'>
                 <div className="sec4-heading">
                         <p className='heading'>How It's Works</p>
@@ -200,27 +199,25 @@ export default function NewLandingpage() {
                 <div className="sec4-register">
                     <div className="register-hotal">
                         <p className='card-desc'>Register as a Restuarant</p> 
-                        <button className='sec4-btn'>Register</button>
+                        <button className='sec4-btn' onClick={openModal}>Register</button>
                     </div>
                     <div className="register-customer">
                         <p className='card-desc'>Register as a Customer</p> 
-                        <button className='sec4-btn'>Register</button>
+                        <button className='sec4-btn' onClick={openModal}>Register</button>
                     </div>
                 </div>
              </div>
-
-             {/* ----------------------------------------sec4 -------------------------------------- */}
 
               <div className='sec5' id='sec5'>
                 <div className="sec5-heading">
                     <p className='Footer-heading'>Have Question In Mind? </p>
                     <p className='Footer-heading'>Let Us Help You </p>
                 </div>                            
-                    <div class="Footer-container">
+                    <div className="Footer-container">
                         <div className='Footer-mail-box'>
                             <div className='Footer-mail'>
                                 <input type='email' placeholder=' your-info@gmail.com '></input>
-                                <button type='Submit' class="Footer-btn">Submit</button>
+                                <button type='Submit' className="Footer-btn">Submit</button>
                             </div>
                         </div>
                 <div className="Footer-contact-info">
@@ -232,21 +229,42 @@ export default function NewLandingpage() {
                             <p className='desc'>Quality</p>
                             <p className='desc'>Help</p>
                             <p className='desc'>Share</p>
-                            <p className='desc'>Works</p>
-                            <p className='desc'>Info</p>
+                            <p className='desc'>Careers</p>
                         </div>
-                     <div className='Footer-contact-sec1'>
-                            <p className='desc'>O70-3768910</p>
-                            <p className='desc'>resto.bookinginfo<br />@gmail.com</p>
-                    </div>
-                    <div className='Footer-contact-sec1'>
-                        <p className='desc'>Terms & Contitions</p>
-                        <p className='desc'>Privacy Policy</p>
-                    </div>
+                        <div className='Footer-contact-sec1'>
+                            <p className='desc'>+91-978-xxxx-xxx</p>
+                            <p className='desc'>+91-978-xxxx-xxx</p>
+                            <p className='desc'>+91-978-xxxx-xxx</p>
+                            <p className='desc'>+91-978-xxxx-xxx</p>
+                        </div>
                 </div>
-        </div>
-    </div>
+                    </div>
+                    <div className='Footer-Footer'>
+                        <p className='desc'>Footer</p>
+                    </div>
+              </div>
 
+            <Modal 
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                
+            >
+                <h2>Register</h2>
+                <form action='' method='post'>
+                    <label>
+                        Name:
+                        <input type="text" name="name" />
+                    </label>
+                    <br />
+                    <label>
+                        Email:
+                        <input type="email" name="email" />
+                    </label>
+                    <br />
+                    <button type="submit">Submit</button>
+                    <button onClick={closeModal}>Close</button>
+                </form>
+            </Modal>
         </div>
     );
 }

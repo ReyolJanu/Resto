@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* font-family: "Oswald", sans-serif; for RESTO Word
@@ -41,7 +43,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 20; /* Ensure it's above other content */
+    z-index: 10; /* Ensure it's above other content */
     background-color: var(--white); /* Set your desired background color */
     display: flex;
     justify-content: space-between;
@@ -75,6 +77,7 @@ a:active {
     background-color: var(--red);
     color: var(--white);
 }
+
 
 .nav-profile {
     width: 40px;
@@ -401,4 +404,26 @@ input{
 .Footer-heading{
     font-family: var(--gray);
 }
+/* 
+----------------------------------model----------------------------------- */
 
+/* ModalStyles.css */
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.80) !important;
+}
+
+.ReactModal__Content {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: lightsteelblue;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
