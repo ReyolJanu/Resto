@@ -1,89 +1,111 @@
 import React from 'react'
 import '../Css/Host.css'
-import { FaBeer } from 'react-icons/fa';
+import { MdSpaceDashboard } from "react-icons/md";
+import { MdGpsFixed } from "react-icons/md";
+import { MdTableRestaurant } from "react-icons/md";
+import { IoNotifications } from "react-icons/io5";
+import { MdFeedback } from "react-icons/md";
+import { IoSettingsSharp } from "react-icons/io5";
+import { IoMdLogOut } from "react-icons/io";
 import hostimage from '../images/host3.jpg';
+<<<<<<< HEAD
 import { MdDashboard } from "react-icons/md";
+=======
+import logoimage from '../images/logo.png';
+
+
+>>>>>>> 0d63a5ce24bfe4cf2fde1fdee9882d86817d246d
 const Host = () => {
   return (
     <div>
-      <section>
+      <div class="content">
         <div class="left">
 
           <nav> 
        
           <div class="id">
           <img  class="hostimage"src={hostimage} ></img>
-          <span class="nav-items"><b>Restaurant Host </b></span>
+          <span class=" ">Restaurant Host</span>
           </div>
-       
+
+          <div class="list">
           <ul>
           <li><a href="#"> 
+<<<<<<< HEAD
           <i class="icon"><MdDashboard /></i>
+=======
+          <i class="icon"><MdSpaceDashboard /></i>
+>>>>>>> 0d63a5ce24bfe4cf2fde1fdee9882d86817d246d
           <span class="nav-items">Dashboard</span>
           </a> </li>
           <li><a href="#">
-          <i class="icon"><FaBeer /></i>
+          <i class="icon"><MdGpsFixed /></i>
           <span class="nav-items">Reservation</span>
           </a></li>
           <li><a href="#">
-          <i class="icon"><FaBeer /></i>
+          <i class="icon"><MdTableRestaurant/></i>
           <span class="nav-items">Tables</span>
           </a></li>
           <li><a href="#">
-          <i class="icon"><FaBeer /></i>
+          <i class="icon"><IoNotifications /></i>
           <span class="nav-items">Notification</span>
           </a></li>
           <li><a href="#">
-          <i class="icon"><FaBeer /></i> 
+          <i class="icon"><MdFeedback /></i> 
           <span class="nav-items">Feedback</span>
           </a></li>
           <li><a href="#">
-          <i class="icon"><FaBeer /></i> 
+          <i class="icon"><IoSettingsSharp /></i> 
           <span class="nav-items">Settings</span>
           </a></li>
           <li><a href="#" class="logout">
-          <i class="icon"><FaBeer /></i>  
+          <i class="icon"><IoMdLogOut /></i>  
           <span class="nav-items">Logout</span>
           </a></li>
          </ul>
+         </div>
          </nav>
 
         </div>
-    
+
+      <div class="right">
+
         <div class="top">
            <div class="logo">
-              <img class="logoimage" src="" ></img>
+              <img class="logoimage" src={logoimage} ></img>
            </div>
            <div class="profile">
-              <img src="" alt="profileimage"></img>
+              <img src={hostimage} alt=""></img>
            </div>
         </div>
+
+        <div class="container">
        
-        <div class="main">
-          <div class="carts">
-            <p class="title">Customers</p>
-            <p class="count">30</p>
-          </div>
-          <div class="carts">
-            <p class="title">Reservation</p>
-            <p class="count">15</p>
-          </div>
-          <div class="carts">
-            <p class="title">Preorders</p>
-            <p class="count">40</p>
-          </div>
-          <div class="carts">
-            <p class="title">Notifications</p>
-            <p class="count">35</p>
-          </div>
+           <div class="main">
+             <div class="carts">
+               <p class="title">Customers</p>
+               <p class="count">30</p>
+             </div>
+             <div class="carts">
+               <p class="title">Reservation</p>
+               <p class="count">15</p>
+             </div>
+             <div class="carts">
+               <p class="title">Preorders</p>
+               <p class="count">40</p>
+             </div>
+             <div class="carts">
+               <p class="title">Notifications</p>
+               <p class="count">35</p>
+             </div>
 
-          <div class="graph">
+              <div class="graph">
 
+              </div>
+            </div>  
           </div>
-        </div>
-
-      </section>
-
+      </div>
+     </div>
    </div>
   )
 }
