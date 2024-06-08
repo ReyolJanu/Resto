@@ -8,9 +8,13 @@ import { MdFeedback } from "react-icons/md";
 import { IoSettingsSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import hostimage from '../images/host3.jpg';
+<<<<<<< HEAD
+import { MdDashboard } from "react-icons/md";
+=======
 import logoimage from '../images/logo.png';
 
 
+>>>>>>> 0d63a5ce24bfe4cf2fde1fdee9882d86817d246d
 const Host = () => {
   return (
     <div>
@@ -27,7 +31,11 @@ const Host = () => {
           <div class="list">
           <ul>
           <li><a href="#"> 
+<<<<<<< HEAD
+          <i class="icon"><MdDashboard /></i>
+=======
           <i class="icon"><MdSpaceDashboard /></i>
+>>>>>>> 0d63a5ce24bfe4cf2fde1fdee9882d86817d246d
           <span class="nav-items">Dashboard</span>
           </a> </li>
           <li><a href="#">
