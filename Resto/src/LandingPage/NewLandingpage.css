@@ -76,6 +76,7 @@ a:active {
     color: var(--white);
 }
 
+
 .nav-profile {
     width: 40px;
     height: 40px;
@@ -401,4 +402,28 @@ input{
 .Footer-heading{
     font-family: var(--gray);
 }
+/* 
+----------------------------------model----------------------------------- */
+
+/* ModalStyles.css */
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.80) !important;
+}
+
+.ReactModal__Content {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: lightsteelblue;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
 

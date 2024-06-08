@@ -2,6 +2,7 @@ import React from 'react'
 import '../Css/Host.css'
 import { FaBeer } from 'react-icons/fa';
 import hostimage from '../images/host3.jpg';
+import { MdDashboard } from "react-icons/md";
 const Host = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Host = () => {
        
           <ul>
           <li><a href="#"> 
-          <i class="icon"><FaBeer /></i>
+          <i class="icon"><MdDashboard /></i>
           <span class="nav-items">Dashboard</span>
           </a> </li>
           <li><a href="#">
