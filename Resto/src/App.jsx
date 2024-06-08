@@ -36,10 +36,11 @@ export const App = () => {
 
       <NewLandingpage /> */}
 
-        */}
+      
         {/* <NewLandingpage /> */}
-        {/* <Admin/> */}
-//         <Routingdiv />
+        {/* <Admin/> 
+        <Routingdiv />*/}
+       
 
     </>
   )
