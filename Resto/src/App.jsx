@@ -1,6 +1,5 @@
 import React from 'react'
-
-import Admin from './Admin/Admin'
+import Admin from './Admin/Components/Admin'
 //import Host from './HostDashboard/Componenets/Host'
 //import Reservation from './ReservationPage/Components/Reservation'
 //import KitchenStaff from './KitchenStaff Dashboard/Components/KitchenStaff'
