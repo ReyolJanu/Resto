@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import './NewLandingpage.css';
 import logo from './images/logo.png';
-import profile from './images/default-profile.png';
+// import profile from './images/default-profile.png';
 import home1 from './images/Home.jpg';
 import home2 from './images/Home2.jpg';
 import home3 from './images/Home3.jpg';
@@ -17,12 +17,14 @@ import hotal6 from './images/hotal6.jpg';
 import click from './icons/click.png';
 import food from './icons/foodicon.png';
 import login from './icons/login.png';
+// import { IoIosCloseCircleOutline } from "react-icons/io";
 
 Modal.setAppElement('#root'); // Accessibility
 
 export default function NewLandingpage() {
     const [currentImage, setCurrentImage] = useState(1);
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpentwo, setModalIsOpentwo] = useState(false);
     const imagePaths = [home1, home2, home3];
 
     const changeBackgroundImage = () => {
@@ -37,10 +39,18 @@ export default function NewLandingpage() {
     const openModal = () => {
         setModalIsOpen(true);
     };
+    const openModaltwo = () => {
+        setModalIsOpentwo(true);
+    };
+
 
     const closeModal = () => {
         setModalIsOpen(false);
     };
+    const closeModaltwo = () => {
+        setModalIsOpentwo(false);
+    };
+
 
     const backgroundImageStyle = {
         width: '100vw',
@@ -203,7 +213,7 @@ export default function NewLandingpage() {
                     </div>
                     <div className="register-customer">
                         <p className='card-desc'>Register as a Customer</p> 
-                        <button className='sec4-btn' onClick={openModal}>Register</button>
+                        <button className='sec4-btn' onClick={openModaltwo}>Register</button>
                     </div>
                 </div>
              </div>
@@ -243,26 +253,185 @@ export default function NewLandingpage() {
                         <p className='desc'>Footer</p>
                     </div>
               </div>
-
+{/* --------------------------------------------Model----------------------------------------------- */}
             <Modal 
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 
             >
-                <h2>Register</h2>
+                <div className="model-msg">
+                    <div className="msg"><img src={logo} id='model-logo'/></div>
+                    <div className="btn"><button onClick={closeModal} className='model-close-btn'>close</button></div>
+                </div>
+                
+                <p className="model-heading">Restuarant Registation</p>
+                
                 <form action='' method='post'>
-                    <label>
-                        Name:
-                        <input type="text" name="name" />
-                    </label>
-                    <br />
-                    <label>
-                        Email:
-                        <input type="email" name="email" />
-                    </label>
-                    <br />
-                    <button type="submit">Submit</button>
-                    <button onClick={closeModal}>Close</button>
+                    <div className="main-informations">
+                    <div className="informations">
+                    <label>Resturant Name</label>
+                    <input type='text' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Owner Full Name</label>
+                    <input type='text' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Email</label>
+                    <input type='email' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Contact Number</label>
+                    <input type='number' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Register Number</label>
+                    <input type='number' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>NIC Number</label>
+                    <input type='number' className='input'/>
+                    </div>
+
+                    <div className="informations">
+                    <label>City</label>
+                    <input type='text' className='input'/>
+                    <label>Province</label>
+                    <select name="provices">
+                        <option value="Eastern">Eastern</option>
+                        <option value="Western">Western</option>
+                        <option value="Northern">Northern</option>
+                        <option value="Central">Central</option>
+                        <option value="Southern">Southern</option>
+                        <option value="North Western">North Western</option>
+                        <option value="Uva">Uva</option>
+                        <option value="Sabaragamuwa ">Sabaragamuwa </option>
+                        <option value="North Central">North Central</option>
+                    </select>
+                    </div>
+                    
+                    <div className="informations">
+                    <label>Single Tables</label>
+                    <select name="tables">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="9+">9+</option>
+                    </select>
+                    <label>Cuple Tables</label>
+                    <select name="tables">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="9+">9+</option>
+                    </select>
+                    <label>Squard Tables</label>
+                    <select name="tables">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="9+">9+</option>
+                    </select>
+                    <label>PartyTables</label>
+                    <select name="tables">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="9+">9+</option>
+                    </select>
+                    </div>
+                    <div className="informations">
+                    <label>Feeds</label>
+                    <textarea />
+                    </div>
+                    <div className="informations-btn">
+                        <button type='submit' id='model-btn'>Register</button>
+                    </div>
+                    </div>
+                    
+                </form>
+            </Modal>
+
+            <Modal 
+                isOpen={modalIsOpentwo}
+                onRequestClose={closeModaltwo}
+                
+            >
+                <div className="model-msg">
+                    <div className="msg"><img src={logo} id='model-logo'/></div>
+                    <div className="btn"><button onClick={closeModaltwo} className='model-close-btn'>close</button></div>
+                </div>
+                
+                <p className="model-heading">Customer Registation</p>
+                
+                <form action='' method='post'>
+                    <div className="main-informations">
+                    <div className="informations">
+                    <label>First Name</label>
+                    <input type='text' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Last Name</label>
+                    <input type='text' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Email</label>
+                    <input type='email' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>Contact Number</label>
+                    <input type='number' className='input'/>
+                    </div>
+                    <div className="informations">
+                    <label>NIC Number</label>
+                    <input type='number' className='input'/>
+                    </div>
+
+                    <div className="informations">
+                    <label>City</label>
+                    <input type='text' className='input'/>
+                    </div>
+
+                    <div className="msg-div">
+                        <div className='model-note-msg'>
+                            {/* <div><span className='note'>Note :</span></div> */}
+                           <div> <p className='model-msgs'> Your UserName and Password will be sent your Email.
+                            Then you can Login via given Credientials</p> </div>
+                        </div>
+                    </div>
+                    <div className="informations-btn">
+                        <button type='submit' id='model-btn'>Register</button>
+                    </div>
+                    </div>
+                    
                 </form>
             </Modal>
         </div>
