@@ -1,4 +1,7 @@
 import React from 'react'
+
+//import Admin from './Admin/Components/Admin'
+//import Routingdiv from './HostDashboard/Componenets/Routingdiv'
 import Admin from './Admin/Components/Admin'
 // import Routingdiv from './HostDashboard/Componenets/Routingdiv'
 //import Host from './HostDashboard/Componenets/Host'
@@ -17,8 +20,9 @@ export const App = () => {
       <KitchenStaff/>
       <Customer/>
       <Routingdiv />
-      <NewLandingpage /> */}
-       
+      <NewLandingpage />
+      <Host/> */}
+      
     </>
   )
 }

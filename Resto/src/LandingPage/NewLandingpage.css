@@ -415,15 +415,121 @@ input{
 
 .ReactModal__Content {
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: lightsteelblue;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
+    background: white;
     max-width: 90%;
     border: 1px solid #ccc;
-    background: white;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.model-heading{
+    font-family: var(--Poppins);
+    color: var(--red);
+    font-weight: 600;
+    font-size: 20px;
+}
+.model-msg{
+    background-color:;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-informations{
+    width: 100%;
+    height: 100%;
+    padding-left:30px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.informations{
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    height: 25px;
+}
+label{
+    font-family: var(--Poppins);
+    color: var(--gray);
+    width: 20%;
+    font-weight: 600;
+}
+.input{
+    font-family: var(--Poppins);
+    color: var(--gray);
+    border: 1px solid gray;
+}
+textarea{
+    font-family: var(--Poppins);
+    color: var(--gray);
+    border: 1px solid gray;
+    width: 60%;
+    background-color: var(--body-background);
+}
+.informations-btn{
+    padding-top: 20px;
+    float: right;
+}
+#model-btn {
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 70, 29);
+    border: 1px solid white;
+    transition: all 0.1s ease; /* Add a transition for a smooth effect */
+}
+
+#model-btn:hover {
+    font-weight: 700;
+    color: rgb(0, 70, 29);
+    background-color: white;
+    border: 1px solid rgb(0, 70, 29);
+    
+}
+.model-close-btn{
+    width: 50px;
+    padding: 5px;
+    height: auto;
+    font-family: var(--Poppins);
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: white;
+    border-radius: 5px;
+
+}
+.model-close-btn:hover{
+    box-shadow: 0 0 10px rgba(250, 28, 39, 0.1), 0 0 20px rgba(250, 28, 39, 0.1), 0 0 30px rgba(250, 28, 39, 0.1); /* Glow effect */
+}
+#model-logo{
+    height: 20px;
+    width: auto;
+}
+.note{
+    color: var(--red);
+    font-weight: 600;
+}
+.msg-div{
+    margin-top: 20px;
+    padding-top:  10px;
+    padding-bottom: 10px;
+    background-color: #92ffa9;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.note{
+    color: var(--red);
+    font-weight: 600;
+}
+.model-msgs{
+    color: rgb(65, 65, 65);
+    font-weight: 500;
 }
