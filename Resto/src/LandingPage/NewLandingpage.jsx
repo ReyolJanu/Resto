@@ -423,7 +423,7 @@ export default function NewLandingpage() {
                     <div className="msg-div">
                         <div className='model-note-msg'>
                             {/* <div><span className='note'>Note :</span></div> */}
-                           <div> <p className='model-msgs'> Your UserName and Password will be sent your Email.
+                           <div> <p className='model-msgs'> Your UserName is email and Password will be sent your Email.
                             Then you can Login via given Credientials</p> </div>
                         </div>
                     </div>
