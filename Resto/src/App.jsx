@@ -6,6 +6,7 @@ import React from 'react'
 //import KitchenStaff from './KitchenStaff Dashboard/Components/KitchenStaff'
 //import { Customer } from './Customer Dashboard/Components/Customer'
 import NewLandingpage from './LandingPage/NewLandingpage'
+//import ModalSample from './LandingPage/ModalSample'
 
 
 export const App = () => {
@@ -34,6 +35,7 @@ export const App = () => {
         <NewLandingpage />
         {/* <Admin/> */}
         {/* <Routingdiv /> */}
+        {/* <ModalSample /> */}
 
     </>
   )
