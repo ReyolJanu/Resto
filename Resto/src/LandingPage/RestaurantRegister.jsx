@@ -139,7 +139,7 @@ const RestaurantRegister = ({ closeModal }) => {
                         <p className='pre-msg'>System will sent username and password to your email
                             and also aditionaly Kitchen Staff username password attached your mail
                             so You can access RestuarentDashboard and KitchenStaff Dashboard via given
-                            Credentials
+                            Credentials.
                         </p>
                     </div>
                 </div>
