@@ -5,7 +5,7 @@ import React from 'react'
 //import Reservation from './ReservationPage/Components/Reservation'
 //import KitchenStaff from './KitchenStaff Dashboard/Components/KitchenStaff'
 //import { Customer } from './Customer Dashboard/Components/Customer'
-import NewLandingpage from './LandingPage/NewLandingpage'
+//import NewLandingpage from './LandingPage/NewLandingpage'
 //import ModalSample from './LandingPage/ModalSample'
 
 
