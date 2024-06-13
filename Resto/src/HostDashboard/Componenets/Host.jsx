@@ -1,85 +1,68 @@
 import React from 'react'
 import '../Css/Host.css'
+import { MdSpaceDashboard,MdTableRestaurant,MdFeedback,MdGpsFixed  } from "react-icons/md";
+import { IoNotifications,IoSettingsSharp } from "react-icons/io5";
+import { IoMdLogOut } from "react-icons/io";
+import hostimage from '../images/host3.jpg';
+import logoimage from '../images/logo.png';
+import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
+import Dashboardhost from './Dashboardhost';
+import Reservationhost from './Reservationhost';
+
+
 const Host = () => {
+ 
   return (
-    <div>
-      <section>
-        <div class="left">
+    
+       <BrowserRouter>
+        <div className="content">
+          <div class="left">  
+           
+           <div class="id">
+                <img  class="hostimage"src={hostimage} ></img> 
+               <span class="nav-items">Restaurant Host</span>
+            </div>
 
-          <div class="id">
-          <img src="" alt="hostimage"></img>
-          <span class="nav-items"><b>Restaurant Host</b></span>
-          </div>
-
-          <nav>  
-          <ul>
-          <li><a href="#"> 
-          <i class=""></i>
-          <span class="nav-items"><b>Dashboard</b></span>
-          </a> </li>
-          <li><a href="#">
-          <i class=""></i>
-          <span class="nav-items"><b>Reservation</b></span>
-          </a></li>
-          <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Tables</b></span>
-          </a></li>
-          <li><a href="#">
-          <i class=""></i>
-          <span class="nav-items"><b>Notification</b></span>
-          </a></li>
-          <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Feedback</b></span>
-          </a></li>
-          <li><a href="#">
-          <i class=""></i> 
-          <span class="nav-items"><b>Settings</b></span>
-          </a></li>
-          <li><a href="#" class="logout">
-          <i class=""></i> 
-          <span class="nav-items"><b>Logout</b></span>
-          </a></li>
-         </ul>
-         </nav>
-
-        </div>
-        <div class="top">
-           <div class="logo">
-              <img src="" alt="logoimage"></img>
+           <div className="list">
+           <ul>
+           <li><Link to="/"><i><MdSpaceDashboard /></i><span>Dashboard</span></Link> </li>
+           <li><Link to="/Reservation"><i><MdGpsFixed /></i><span>Reservation</span></Link></li>
+           <li><Link to="/Tables"><i>< MdTableRestaurant/></i><span>Tables</span></Link></li>
+           <li><Link to="/Notification"> <i><IoNotifications/></i><span>Notification</span></Link></li>
+           <li><Link to="/Feedback"><i><MdFeedback/></i><span>Feedback</span></Link></li>
+           <li><Link to="/Settings"><i><IoSettingsSharp/></i><span>Settings</span></Link></li>
+           <li class="logout"><Link to="/Logout"><i><IoMdLogOut/></i><span>Logout</span></Link></li>
+           </ul>
            </div>
-           <div class="profile">
-              <img src="" alt="profileimage"></img>
+      
+          </div>
+
+          {/* top */}
+       <div className="right">
+       <div class="top">
+              <div class="logo">
+                 <img class="logoimage"src={logoimage} ></img> 
+              </div>
+              <div class="profile">
+                  <img  class="profileimage"src={hostimage} ></img> 
+              </div>
            </div>
-        </div>
-        <div class="main">
-          <div class="carts">
-            <p class="title">Customers</p>
-            <p class="count">30</p>
-          </div>
-          <div class="carts">
-            <p class="title">Reservation</p>
-            <p class="count">15</p>
-          </div>
-          <div class="carts">
-            <p class="title">Preorders</p>
-            <p class="count">40</p>
-          </div>
-          <div class="carts">
-            <p class="title">Notifications</p>
-            <p class="count">35</p>
-          </div>
 
-          <div class="graph">
+            {/* rooting part */}
+       <div className="main">
+         <Routes>
+            <Route path='/' element={<Dashboardhost />} />
+            <Route path='/Reservation' element={<Reservationhost />} />
+         </Routes>
+       </div>     
+         
+       </div>
+              
+      </div>  
+          
+      </BrowserRouter>    
 
-          </div>
-        </div>
-
-      </section>
-
-   </div>
   )
 }
 
-export default Host
+export default Host;

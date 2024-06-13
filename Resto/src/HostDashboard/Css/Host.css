@@ -1,0 +1,118 @@
+:root {
+    --body-background: #d9d9d9;
+    --gray: rgb(80, 80, 80);
+    --red: #bd2026;
+    --black: #121212;
+    --white: white;
+    --resto-word: "Oswald", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --Poppins: "Poppins", sans-serif;
+    --Martel: "Martel Sans", sans-serif;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--Poppins);
+    user-select: none;
+  }
+  
+  .content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    height: 100vh;
+    background-color: var(--black);
+  }
+  
+  .id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hostimage {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+  }
+  
+  span {
+    color: var(--white);
+    font-size: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+  
+  ul {
+    margin-top: 40px;
+    list-style: none;
+  }
+  
+  li {
+    margin: 20px 0;
+    padding-left:20px;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  a {
+    display: table;
+    width:262px;
+    padding: 10px;
+    color: var(--white);
+    position: relative;
+    margin-left: 25px;
+  }
+  
+  a:hover {
+    background-color: var(--red);
+    border-radius:10px 0 0 10px;
+  }
+  
+  .right {
+    width: 80%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: var(--white);
+    height: auto;
+  }
+  
+  .logoimage {
+    width: auto;
+    height: 30px;
+    margin: 15px;
+  }
+  
+  .profileimage {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 100px;
+  }
+  
+
+  
