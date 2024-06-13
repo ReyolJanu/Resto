@@ -16,6 +16,7 @@ font-family: "Martel Sans", sans-serif; */
     --Roboto: "Roboto", sans-serif;
     --Poppins: "Poppins", sans-serif;
     --Martel: "Martel Sans", sans-serif;
+    --Darkgray:rgb(196, 196, 196);
     /* font-family: var(--main-headingFont);   ==calling method*/
 }
 
@@ -48,10 +49,9 @@ font-family: "Martel Sans", sans-serif; */
 .modal-content-customer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(144, 250, 214);
 }
 
-button {
+.close-button {
     margin-top: 10px;
     padding: 10px;
     border: none;
@@ -59,4 +59,77 @@ button {
     color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
+}
+.logo{
+    height: 30px;
+    width: auto;
+}
+.customerform-div{
+    height: auto;
+    width: 100%;
+}
+.customer-input{
+    width: 50%;
+    font: var(--Poppins);
+    color: var(--gray);
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: var(--Darkgray);
+    height: 30px;
+}
+::placeholder{
+    color: #5a5a5a;
+    font-size: 15px;
+}
+.sec1{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.customer-input-address{
+    width: 100%;
+    font: var(--Poppins);
+    color: var(--gray);
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: var(--Darkgray);
+    height: 30px;
+}
+.customer-select{
+    width: 24%;
+    font: var(--Poppins);
+    color: var(--gray);
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: var(--Darkgray);
+    height: 30px;
+}
+.customer-input-postal{
+    width: 24%;
+    font: var(--Poppins);
+    color: var(--gray);
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: var(--Darkgray);
+    height: 30px;
+}
+.gender-label{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-div{
+    width: 50%;
+    display: flex;
+
+}
+.gender-select{
+    width: 24%;
+    font: var(--Poppins);
+    color: var(--gray);
+    border-radius: 3px;
+    background-color: var(--Darkgray);
+    height: 30px;
 }
