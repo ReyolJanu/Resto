@@ -1,0 +1,102 @@
+
+:root {
+    --body-background: #d9d9d9;
+    --gray: rgb(80, 80, 80);
+    --red: #bd2026;
+    --black: #121212;
+    --white: white;
+    --resto-word: "Oswald", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --Poppins: "Poppins", sans-serif;
+    --Martel: "Martel Sans", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--Poppins);
+    user-select: none;
+  }
+
+ 
+.search{
+    margin: 20px;
+    padding-left:300px;
+ }
+
+.box{
+    border-radius: 5px;
+    background-color:var(--white);
+    border:2px solid var(--black);
+    height:30px;
+    width:40vh;
+    margin:0 10px;
+  }
+  .nd{
+    display: flex;
+    width:100%;
+  }
+
+  .details{
+     width:90%;
+      display:flex;
+      flex-direction:column;
+      margin:20px;
+      
+  }
+
+  table{
+      border-collapse:collapse;
+      width:99%;
+      margin-left:20px;
+  }
+
+  th{
+     text-align:center;
+     font-weight: bold;
+     padding:15px;
+  }
+
+  td{
+      padding: 15px;
+      border:1px solid var(--white);
+      text-align:left;
+      font-size:15px;
+      background-color:var(--body-background);
+  }
+
+  .hours{
+      padding-left:30px;
+  }
+
+  .green{
+      color:green;
+      font-weight: bold;
+  }
+
+  .red{
+      color:red;
+      font-weight: bold;
+  }
+
+.icons-div{
+  width:auto;
+  display:flex;
+  flex-direction: column;
+  margin-top:65px;
+ 
+ 
+} 
+
+.icons{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  gap:10px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
