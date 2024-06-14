@@ -2,6 +2,7 @@
 :root {
     --body-background: #d9d9d9;
     --gray: rgb(80, 80, 80);
+    --grayTable:#8b8b8b;
     --red: #bd2026;
     --black: #121212;
     --white: white;
@@ -20,12 +21,12 @@
     box-sizing: border-box;
     font-family: var(--Poppins);
     user-select: none;
-  }
-
- 
+  } 
 .search{
-    margin: 20px;
-    padding-left:300px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    padding-top: 20px;
  }
 
 .box{
@@ -42,18 +43,18 @@
   }
 
   .details{
-     width:90%;
+     width:100%;
       display:flex;
       flex-direction:column;
-      margin:20px;
-      
+      margin-top:20px;
+      align-items: center;
+      overflow-y: auto;
+      max-height: 500px;
   }
-
   table{
       border-collapse:collapse;
-      width:99%;
-      margin-left:20px;
-  }
+      width:100%;
+    }
 
   th{
      text-align:center;
@@ -99,4 +100,15 @@
   gap:10px;
   margin-top:15px;
   margin-bottom:15px;
+}
+.reservation-part{
+  height: 100%;
+  width: 100%;
+}
+.table{
+  width: auto;
+}
+thead{
+  background-color:var(--grayTable);
+  width: 100%;
 }

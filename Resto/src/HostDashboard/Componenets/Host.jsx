@@ -1,68 +1,61 @@
-import React from 'react'
-import '../Css/Host.css'
-import { MdSpaceDashboard,MdTableRestaurant,MdFeedback,MdGpsFixed  } from "react-icons/md";
-import { IoNotifications,IoSettingsSharp } from "react-icons/io5";
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Dashboardhost from './Dashboardhost';
+import Reservationhost from './Reservationhost';
+import { MdSpaceDashboard, MdTableRestaurant, MdFeedback, MdGpsFixed } from "react-icons/md";
+import { IoNotifications, IoSettingsSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import hostimage from '../images/host3.jpg';
 import logoimage from '../images/logo.png';
-import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
-import Dashboardhost from './Dashboardhost';
-import Reservationhost from './Reservationhost';
-
+import '../Css/Host.css';
 
 const Host = () => {
- 
-  return (
-    
-       <BrowserRouter>
-        <div className="content">
-          <div class="left">  
-           
-           <div class="id">
-                <img  class="hostimage"src={hostimage} ></img> 
-               <span class="nav-items">Restaurant Host</span>
+    const [activeItem, setActiveItem] = useState('Dashboard');
+
+    const handleItemClick = (item) => {
+        setActiveItem(item);
+    };
+
+    return (
+        <BrowserRouter>
+            <div className="content">
+                <div className="left">
+                    <div className="id">
+                        <img className="hostimage" src={hostimage} alt="Host" />
+                        <span className="nav-items">Restaurant Host</span>
+                    </div>
+
+                    <div className="list">
+                        <ul>
+                            <li className={activeItem === 'Dashboard' ? 'active' : ''}>
+                                <Link to="/" onClick={() => handleItemClick('Dashboard')}>
+                                    <i><MdSpaceDashboard /></i><span>Dashboard</span>
+                                </Link>
+                            </li>
+                            <li className={activeItem === 'Reservation' ? 'active' : ''}>
+                                <Link to="/Reservation" onClick={() => handleItemClick('Reservation')}>
+                                    <i><MdGpsFixed /></i><span>Reservation</span>
+                                </Link>
+                            </li>
+                            {/* Add other menu items similarly */}
+                        </ul>
+                    </div>
+                </div>
+
+                {/* top */}
+                <div className="right">
+                    {/* Routing part */}
+                    <div className="main">
+                        <Routes>
+                            <Route path='/' element={<Dashboardhost />} />
+                            <Route path='/Reservation' element={<Reservationhost />} />
+                            {/* Add other Route components as needed */}
+                        </Routes>
+                    </div>
+                </div>
             </div>
-
-           <div className="list">
-           <ul>
-           <li><Link to="/"><i><MdSpaceDashboard /></i><span>Dashboard</span></Link> </li>
-           <li><Link to="/Reservation"><i><MdGpsFixed /></i><span>Reservation</span></Link></li>
-           <li><Link to="/Tables"><i>< MdTableRestaurant/></i><span>Tables</span></Link></li>
-           <li><Link to="/Notification"> <i><IoNotifications/></i><span>Notification</span></Link></li>
-           <li><Link to="/Feedback"><i><MdFeedback/></i><span>Feedback</span></Link></li>
-           <li><Link to="/Settings"><i><IoSettingsSharp/></i><span>Settings</span></Link></li>
-           <li class="logout"><Link to="/Logout"><i><IoMdLogOut/></i><span>Logout</span></Link></li>
-           </ul>
-           </div>
-      
-          </div>
-
-          {/* top */}
-       <div className="right">
-       <div class="top">
-              <div class="logo">
-                 <img class="logoimage"src={logoimage} ></img> 
-              </div>
-              <div class="profile">
-                  <img  class="profileimage"src={hostimage} ></img> 
-              </div>
-           </div>
-
-            {/* rooting part */}
-       <div className="main">
-         <Routes>
-            <Route path='/' element={<Dashboardhost />} />
-            <Route path='/Reservation' element={<Reservationhost />} />
-         </Routes>
-       </div>     
-         
-       </div>
-              
-      </div>  
-          
-      </BrowserRouter>    
-
-  )
+        </BrowserRouter>
+    );
 }
 
 export default Host;
