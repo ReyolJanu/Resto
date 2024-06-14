@@ -57,7 +57,6 @@ export default function Dashboardhost() {
   ];
   
   return (
-    <div>
       <div className="rootpart">
                <div className="cart-div">
                     <div className="cart">
@@ -118,7 +117,6 @@ export default function Dashboardhost() {
           </div>
     </div> 
     </div> 
-    </div>
   )
 }
 

@@ -26,6 +26,7 @@
     width: 100%;
     font-family: var(--Poppins);
     background-color: var(--white);
+    margin-top: 5px;
   }
 
   .cart-div {

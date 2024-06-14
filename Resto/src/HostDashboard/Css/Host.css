@@ -30,7 +30,7 @@
 .left {
   display: flex;
   flex-direction: column;
-  width:20%;
+  width: 20%;
   height: 100vh;
   background-color: rgb(59, 59, 59);
 }
@@ -64,11 +64,19 @@ ul {
 
 li {
   margin: 20px 0;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
-/* Added active class styling */
-li.active {
+a {
+  display: table;
+  width: 262px;
+  padding: 10px;
+  color: var(--white);
+  position: relative;
+  margin-left: 25px;
+}
+
+a:hover, .active a {
   background-color: var(--red);
   border-radius: 10px 0 0 10px;
 }
@@ -76,20 +84,6 @@ li.active {
 .logout {
   position: absolute;
   bottom: 10px;
-}
-
-a {
-  display: table;
-  width:262px;
-  padding: 10px;
-  color: var(--white);
-  position: relative;
-  margin-left: 25px;
-}
-
-a:hover {
-  background-color: var(--red);
-  border-radius:10px 0 0 10px;
 }
 
 .right {
