@@ -1,11 +1,16 @@
 import React from 'react'
+import BasicButton from './BasicButton'
+
+
 
 const Reservation = () => {
+ 
   return (
-    <div>
-      <p>
-    Welcome to Reservation page2
-      </p>
+    <div>  
+    Welcome to Reservation page<br></br>
+    <BasicButton />
+       
+      
     </div>
   )
 }
