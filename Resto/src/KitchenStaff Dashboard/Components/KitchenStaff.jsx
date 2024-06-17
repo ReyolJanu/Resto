@@ -5,6 +5,11 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import { MdSpaceDashboard, MdTableRestaurant, MdFeedback, MdGpsFixed } from "react-icons/md";
 import { IoNotifications, IoSettingsSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
+import DashboardKitchenStaff from './DashboardKitchenStaff';
+import ReservationKitchenStaff from './ReservationKitchenStaff';
+import logoimage from '../images/logo.png'
+import hostimage from '../images/host3.jpg'
+import KitchenStaffimage from '../images/image2.jpg'
 
 
 
@@ -30,7 +35,7 @@ const KitchenStaffContent = () => {
       <div className="content">
           <div className="left">
               <div className="id">
-                  <img className="KitchenStaffimage" src={KitchenStaff} alt="KitchenStaff" />
+                  <img className="KitchenStaffimage" />
                   <span className="nav-items">Restaurant Host</span>
               </div>
 
@@ -67,9 +72,9 @@ const KitchenStaffContent = () => {
                   <div className="logo">
                       <img className="logoimage" src={logoimage} alt="logo" />
                   </div>
-                  {/* <div className="profile">
+                  <div className="profile">
                       <img className="profileimage" src={hostimage} alt="profile" />
-                  </div> */}
+                  </div>
               </div>
 
               {/* routing part */}

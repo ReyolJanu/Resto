@@ -1,6 +1,3 @@
-
-
-
 :root {
   --body-background: #d9d9d9;
   --gray: rgb(80, 80, 80);
@@ -36,6 +33,7 @@
   width: 20%;
   height: 100vh;
   background-color: rgb(59, 59, 59);
+  padding-top: 20px;
 }
 
 .id {
@@ -44,7 +42,7 @@
   justify-content: center;
 }
 
-.KitchenStaffimage {
+.hostimage {
   width: 45px;
   height: 45px;
   border-radius: 100px;
