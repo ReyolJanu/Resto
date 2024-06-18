@@ -3,14 +3,14 @@ import React, { useState, useEffect } from 'react';
 import '../Css/DashboardKitchenStaff.css'
 
 const initialOrders = [
-  { id: 1, customerName: 'John Doe', itemName: 'Pizza', status: 'pending' },
-  { id: 2, customerName: 'Jane Smith', itemName: 'Burger', status: 'pending' },
-  { id: 3, customerName: 'Emily Jones', itemName: 'Pasta', status: 'pending' },
-  { id: 4, customerName: 'Chris Lee', itemName: 'Salad', status: 'pending' },
-  { id: 5, customerName: 'John Doe', itemName: 'Pizza', status: 'pending' },
-  { id: 6, customerName: 'Jane Smith', itemName: 'Burger', status: 'pending' },
-  { id: 7, customerName: 'Emily Jones', itemName: 'Pasta', status: 'pending' },
-  { id: 8, customerName: 'Chris Lee', itemName: 'Salad', status: 'pending' },
+  { id: 1, customerName: 'Vithu', itemName: 'Grilled chiken,Mixed Ice cream', status: 'pending' },
+  { id: 2, customerName: 'Nithu', itemName: 'Chiken Shawarma, Mixed Ice cream', status: 'pending' },
+  { id: 3, customerName: 'Beulah', itemName: 'Malasala Dhosa,Vadai, Nescafe coffe', status: 'pending' },
+  { id: 4, customerName: 'Keerthi', itemName: 'Chicken Biriyani, Vanila Ice cream', status: 'pending' },
+  { id: 5, customerName: 'Reyol', itemName: 'Lawa cake, Chicken Kottu,Fried rice', status: 'pending' },
+  { id: 6, customerName: 'Prakya', itemName: 'Red Forest cake, Mixed Ice cream', status: 'pending' },
+  { id: 7, customerName: 'Joy', itemName: 'Red Forest cake, Mixed Ice cream', status: 'pending' },
+  { id: 8, customerName: 'Kammu', itemName: 'Grilled chiken, Chiken Shawarma', status: 'pending' },
 ];
 
 const DashboardKitchenStaff = () => {

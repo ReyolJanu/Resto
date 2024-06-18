@@ -13,8 +13,8 @@ export const App = () => {
   return (
     <>
          
-        <KitchenStaff/>  
-         {/* <Host/>  */}
+         <KitchenStaff/>   
+        {/* <Host/>    */}
         {/* <Reservation/>
         <Customer/> 
         <Customer/> 
