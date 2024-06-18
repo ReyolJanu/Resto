@@ -2,14 +2,13 @@
 import React, { useState } from 'react';
 import '../Css/KitchenStaff.css';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { MdSpaceDashboard, MdTableRestaurant, MdFeedback, MdGpsFixed } from "react-icons/md";
+import { MdSpaceDashboard, MdTableRestaurant, MdFeedback, MdInventory  } from "react-icons/md";
 import { IoNotifications, IoSettingsSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import DashboardKitchenStaff from './DashboardKitchenStaff';
-import ReservationKitchenStaff from './ReservationKitchenStaff';
+import InventoryKitchenStaff from './InventoryKitchenStaff';
 import logoimage from '../images/logo.png'
-import hostimage from '../images/host3.jpg'
-import KitchenStaffimage from '../images/image2.jpg'
+import KitchenStaffimage from '../images/KitchenStaff.jpg'
 
 
 
@@ -35,8 +34,8 @@ const KitchenStaffContent = () => {
       <div className="content">
           <div className="left">
               <div className="id">
-                  <img className="KitchenStaffimage" />
-                  <span className="nav-items">Restaurant Host</span>
+                 <img className="KitchenStaffimage" src={KitchenStaffimage} alt="KitchenStaff" />  
+                  <span className="nav-items">Kitchen Staff</span>
               </div>
 
               <div className="list">
@@ -44,21 +43,21 @@ const KitchenStaffContent = () => {
                       <li className={active === '/' ? 'active' : ''} onClick={() => handleActive('/')}>
                           <Link to="/"><i><MdSpaceDashboard /></i><span>Dashboard</span></Link>
                       </li>
-                      <li className={active === '/Reservation' ? 'active' : ''} onClick={() => handleActive('/Reservation')}>
-                          <Link to="/Reservation"><i><MdGpsFixed /></i><span>Reservation</span></Link>
-                      </li>
-                      <li className={active === '/Tables' ? 'active' : ''} onClick={() => handleActive('/Tables')}>
+                      <li className={active === '/Inventory' ? 'active' : ''} onClick={() => handleActive('/Inventory')}>
+                          <Link to="/Inventory"><i><MdInventory /></i><span>Inventory</span></Link>
+                       </li>
+                      {/* <li className={active === '/Tables' ? 'active' : ''} onClick={() => handleActive('/Tables')}>
                           <Link to="/Tables"><i><MdTableRestaurant /></i><span>Tables</span></Link>
-                      </li>
+                      </li>  */}
                       <li className={active === '/Notification' ? 'active' : ''} onClick={() => handleActive('/Notification')}>
                           <Link to="/Notification"><i><IoNotifications /></i><span>Notification</span></Link>
                       </li>
-                      <li className={active === '/Feedback' ? 'active' : ''} onClick={() => handleActive('/Feedback')}>
+                      {/* <li className={active === '/Feedback' ? 'active' : ''} onClick={() => handleActive('/Feedback')}>
                           <Link to="/Feedback"><i><MdFeedback /></i><span>Feedback</span></Link>
-                      </li>
-                      <li className={active === '/Settings' ? 'active' : ''} onClick={() => handleActive('/Settings')}>
+                      </li> */}
+                      {/* <li className={active === '/Settings' ? 'active' : ''} onClick={() => handleActive('/Settings')}>
                           <Link to="/Settings"><i><IoSettingsSharp /></i><span>Settings</span></Link>
-                      </li>
+                      </li> */}
                       <li className={`logout ${active === '/Logout' ? 'active' : ''}`} onClick={() => handleActive('/Logout')}>
                           <Link to="/Logout"><i><IoMdLogOut /></i><span>Logout</span></Link>
                       </li>
@@ -73,7 +72,7 @@ const KitchenStaffContent = () => {
                       <img className="logoimage" src={logoimage} alt="logo" />
                   </div>
                   <div className="profile">
-                      <img className="profileimage" src={hostimage} alt="profile" />
+                      <img className="profileimage" src={KitchenStaffimage} alt="profile" />
                   </div>
               </div>
 
@@ -81,7 +80,7 @@ const KitchenStaffContent = () => {
               <div className="main">
                   <Routes>
                       <Route path='/' element={<DashboardKitchenStaff />} />
-                      <Route path='/Reservation' element={<ReservationKitchenStaff />} />
+                      <Route path='/Inventory' element={<InventoryKitchenStaff />} />
                   </Routes>
               </div>
           </div>
