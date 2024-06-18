@@ -1,0 +1,46 @@
+/* InventoryComponent.css */
+
+.inventory-dashboard {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr.low-stock {
+    background-color: #fff3cd;
+  }
+  
+  tbody tr .status {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
