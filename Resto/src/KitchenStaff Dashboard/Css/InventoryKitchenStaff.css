@@ -2,7 +2,9 @@
 
 .inventory-dashboard {
     width: 80%;
-    margin: 0 auto;
+    margin-top:2.5%;
+    margin-left: 10%;
+    /* margin: 0 auto; */
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;

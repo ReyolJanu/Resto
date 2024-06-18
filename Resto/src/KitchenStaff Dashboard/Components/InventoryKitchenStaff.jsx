@@ -4,23 +4,29 @@ import '../Css/InventoryKitchenStaff.css';
 
 // Sample initial inventory data
 const initialInventory = [
-  { id: 1, name: 'Tomatoes', quantity: 50, unit: 'kg', threshold: 10, expiry: '2024-07-01' },
+  { id: 1, name: 'Tomatoes', quantity: 50, unit: 'kg', threshold: 60, expiry: '2024-07-01' },
   { id: 2, name: 'Cheese', quantity: 20, unit: 'kg', threshold: 5, expiry: '2024-06-25' },
   { id: 3, name: 'Basil', quantity: 5, unit: 'kg', threshold: 2, expiry: '2024-06-20' },
+  { id: 4, name: 'Tomatoes', quantity: 50, unit: 'kg', threshold: 10, expiry: '2024-07-01' },
+  { id: 5, name: 'Cheese', quantity: 20, unit: 'kg', threshold: 53, expiry: '2024-06-25' },
+  { id: 6, name: 'Basil', quantity: 5, unit: 'kg', threshold: 2, expiry: '2024-06-20' },
+  { id: 7, name: 'Tomatoes', quantity: 50, unit: 'kg', threshold: 10, expiry: '2024-07-01' },
+  { id: 8, name: 'Cheese', quantity: 20, unit: 'kg', threshold: 5, expiry: '2024-06-25' },
+  { id: 9, name: 'Basil', quantity: 5, unit: 'kg', threshold: 22, expiry: '2024-06-20' },
 ];
 
 const InventoryKitchenStaff = () => {
   const [inventory, setInventory] = useState(initialInventory);
 
-  useEffect(() => {
-    // Simulate a real-time update every 10 seconds
-    const interval = setInterval(() => {
-      // Fetch or simulate inventory update
-      console.log('Updating inventory...');
-    }, 10000);
+  //  useEffect(() => {
+  //    // Simulate a real-time update every 10 seconds
+  //    const interval = setInterval(() => {
+  //      // Fetch or simulate inventory update
+  //      console.log('Updating inventory...');
+  //    }, 1000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  //    return () => clearInterval(interval); // Cleanup interval on component unmount
+  //  }, []);
 
   return (
     <div className="inventory-dashboard">

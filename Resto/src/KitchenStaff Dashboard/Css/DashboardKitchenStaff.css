@@ -2,10 +2,13 @@
 
  .KitchenStaff-Dashboard {
     width: 80%;
-    margin: 0 auto;
+    margin-top:2.5%;
+    margin-left: 10%;
+    
+     /* margin: auto;  */
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
