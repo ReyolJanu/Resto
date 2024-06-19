@@ -1,0 +1,68 @@
+/* KitchenDashboard.css */
+
+ .KitchenStaff-Dashboard {
+    width: 80%;
+    margin-top:2.5%;
+    margin-left: 10%;
+    
+     /* margin: auto;  */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  } 
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  tbody tr.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  tbody tr.accept {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  tbody tr.cancel {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  tbody tr.pending .status {
+    font-weight: bold;
+  }
+  
+  tbody tr.accept .status {
+    font-weight: bold;
+  }
+  
+  tbody tr.cancel .status {
+    font-weight: bold;
+  }
+  

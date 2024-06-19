@@ -7,6 +7,7 @@ import { IoNotifications, IoSettingsSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import DashboardKitchenStaff from './DashboardKitchenStaff';
 import InventoryKitchenStaff from './InventoryKitchenStaff';
+import Notification  from './Notification';
 import logoimage from '../images/logo.png'
 import KitchenStaffimage from '../images/KitchenStaff.jpg'
 
@@ -81,6 +82,7 @@ const KitchenStaffContent = () => {
                   <Routes>
                       <Route path='/' element={<DashboardKitchenStaff />} />
                       <Route path='/Inventory' element={<InventoryKitchenStaff />} />
+                      <Route path='/Notification' element={<Notification />} />
                   </Routes>
               </div>
           </div>
