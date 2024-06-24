@@ -1,0 +1,38 @@
+* {
+            
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+   
+    background-color: #6ef400;
+    padding: 20px;
+    text-align: center;
+}
+
+.content{
+    width:100%;
+    display: flex;
+
+}
+.tables {
+    width:60%;
+    background-color: #0f9d58;
+    padding: 20px;
+}
+
+.booking {
+    width:40%;
+    background-color: #f4b400;
+    padding: 20px;
+}
+
+
+.footer {
+    background-color: #4285f4;
+    padding: 20px;
+    text-align: center;
+}
+
