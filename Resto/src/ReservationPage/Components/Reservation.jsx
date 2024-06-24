@@ -1,18 +1,24 @@
 import React from 'react'
-import BasicButton from './BasicButton'
+import './reservation.css';
+import Tables from './Tables'
+import Booking from './Booking'
 
 
-
-const Reservation = () => {
- 
+function Reservation() {
   return (
-    <div>  
-    Welcome to Reservation page<br></br>
-    <BasicButton />
-       
+    <div>
       
+      <div class="container">
+        <header class="header">Header</header>
+        <div class="content"> 
+        <div class="tables"><Tables/></div> 
+        <div class="booking">Booking</div> 
+        </div>
+        <footer class="footer">Footer</footer>
+      </div>
     </div>
   )
 }
 
 export default Reservation
+
