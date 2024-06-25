@@ -1,11 +1,17 @@
 .chairup div,.chairdown div{
-  width: 0.2%;
+  width: 0.1%;
   border: 12px solid rgb(0, 0, 0);
   padding: 0%;
   margin: 1.2%;
+  border-radius: 2px;
+  
   
   }
   
   .chairup ,.chairdown{
       display: flex;
+  }
+  .all div{
+    margin-top:2px;
+    margin-bottom:2px;
   }

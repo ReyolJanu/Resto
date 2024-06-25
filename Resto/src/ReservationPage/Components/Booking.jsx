@@ -29,6 +29,7 @@ function Booking() {
     <div class="bookbutton">
       <button>Book now</button>
     </div>
+    
     </div>
     
   )

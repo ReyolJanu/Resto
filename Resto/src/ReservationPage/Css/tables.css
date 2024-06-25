@@ -1,28 +1,7 @@
 
-#tlayout{
-    z-index: -1;
-}
-
-#btn1,#btn2,#btn3,#btn4{
-   color:red; 
-   background-color: blue;
-   width:7.3%;
-   height: 8.5%;
-   /* position: absolute; */
-   top: 25%;
-   left: 6.7%;
-   font-size: 100%;
-  
-}
-#btn2{
-    top: 44%;
-    left: 6.7%;
-}
-#btn3{
-    top: 62%;
-    left: 6.7%;
-}
-#btn4{
-    top: 81%;
-    left: 6.7%;
-}
+ hr.short{
+ width:30%;
+ border: 2px solid rgb(91, 3, 3);
+ margin-top: 10px;
+ margin-bottom: 10px;
+ }
