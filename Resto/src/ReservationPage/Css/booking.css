@@ -1,0 +1,12 @@
+
+.dateandtime{
+    display: flex;
+    
+}
+.date,.time{
+    padding-right:5%;
+}
+.preferedtime{
+    display: flex;
+}
+
