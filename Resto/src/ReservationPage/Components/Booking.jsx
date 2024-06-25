@@ -1,6 +1,5 @@
 import React from 'react'
-import './reservation.css';
-
+import '/src/ReservationPage/Css/booking.css';
 
 function Booking() {
   return (
@@ -26,6 +25,9 @@ function Booking() {
     <button>9.15 PM</button>
     <button>9.15 PM</button>
     <button>9.15 PM</button>
+    </div>
+    <div class="bookbutton">
+      <button>Book now</button>
     </div>
     </div>
     

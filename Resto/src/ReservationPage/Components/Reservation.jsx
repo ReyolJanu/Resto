@@ -1,7 +1,8 @@
 import React from 'react'
-import './reservation.css';
 import Tables from './Tables'
 import Booking from './Booking'
+import '/src/ReservationPage/Css/reservation.css';
+
 
 
 function Reservation() {
@@ -12,7 +13,7 @@ function Reservation() {
         <header class="header">Header</header>
         <div class="content"> 
         <div class="tables"><Tables/></div> 
-        <div class="booking">Booking</div> 
+        <div class="booking"><Booking/></div> 
         </div>
         <footer class="footer">Footer</footer>
       </div>

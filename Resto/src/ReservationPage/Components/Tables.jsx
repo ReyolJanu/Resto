@@ -1,16 +1,21 @@
 import React from 'react'
-import BasicButton from './BasicButton'
-import './tables.css';
+import '/src/ReservationPage/Css/tables.css';
 import tablelay from '/src/ReservationPage/Images/restaurant1.png';
+//import MediumTable from './TableTypes/MediumTable';
+//import RoundTable from './TableTypes/RoundTable';
+//import PartyTable from './TableTypes/PartyTable';
+import CoupleTable from './TableTypes/CoupleTable';
+
  
  function Table() {
    return (
      <div>
-     <img src={tablelay} alt="Restaurant" id="tlayout"/>
-    <button id="btn1">Table1</button>
-    <button id="btn2">Table2</button>
-    <button id="btn3">Table3</button>
-    <button id="btn4">Table4</button>
+     {/* <img src={tablelay} alt="Restaurant" id="tlayout"/> */}
+     <CoupleTable/>
+     <CoupleTable/> 
+     <CoupleTable/>
+
+
      </div>
    )
  }
