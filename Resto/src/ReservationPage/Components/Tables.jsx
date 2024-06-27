@@ -12,13 +12,13 @@ import CoupleTable from './TableTypes/CoupleTable';
      <div class="main">
      {/* <img src={tablelay} alt="Restaurant" id="tlayout"/> */}
     <div class="col1">
-     <MediumTable tablename="Table1"/>
+     <MediumTable tablename="Medium-T1"/>
      <hr class="short"></hr>
-     <MediumTable tablename="Table2"/>
+     <MediumTable tablename="Medium-T2"/>
      <hr class="short"></hr>
-     <MediumTable tablename="Table3"/>
+     <MediumTable tablename="Medium-T3"/>
      <hr class="short"></hr>
-     <MediumTable tablename="Table4"/>
+     <MediumTable tablename="Medium-T4"/>
      <hr class="short"></hr>
      </div>
 
@@ -30,35 +30,35 @@ import CoupleTable from './TableTypes/CoupleTable';
     <div class="col3">
       <div class="row1">
          <div class="scol1">
-         <CoupleTable tablename="Table1"/>
+         <CoupleTable tablename="Couple1"/>
          </div>
          <div class="vl-s"></div>
          
         <div class="scol2">
-        <CoupleTable tablename="Table1"/>
+        <CoupleTable tablename="Couple2"/>
         </div>
         <div class="vl-s"></div>
         <div class="scol3">
-          <PartyTable/>
+          <PartyTable tablename="Party-Table"/>
         </div>
       </div>
       <hr class="large"></hr>
       
       <div class="row2">
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T1"/>
       <div class="vl-s2"></div>
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T2"/>
       <div class="vl-s2"></div>
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T3"/>
       
       </div>
       <hr class="large"></hr>
       <div class="row3">
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T4"/>
       <div class="vl-s2"></div>
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T5"/>
       <div class="vl-s2"></div>
-      <RoundTable tablename="Table1"/>
+      <RoundTable tablename="Round-T6"/>
       
       </div>
     </div>
