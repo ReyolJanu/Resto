@@ -10,6 +10,7 @@ import InventoryKitchenStaff from './InventoryKitchenStaff';
 import Notification  from './Notification';
 import logoimage from '../images/logo.png'
 import KitchenStaffimage from '../images/KitchenStaff.jpg'
+import NotificationItem from './NotificationItem';
 
 
 
@@ -83,6 +84,7 @@ const KitchenStaffContent = () => {
                       <Route path='/' element={<DashboardKitchenStaff />} />
                       <Route path='/Inventory' element={<InventoryKitchenStaff />} />
                       <Route path='/Notification' element={<Notification />} />
+                      <Route path='/NotificationItem' element={<NotificationItem />} />
                   </Routes>
               </div>
           </div>
