@@ -3,8 +3,9 @@ import '/src/ReservationPage/Css/booking.css';
 
 function Booking() {
   return (
-    <div>
+    <div class="frm">
        <h1>Book a Table</h1>
+       <hr></hr>
     <label>Party Size</label><br></br>
     <input type ="text"></input><br></br>
     
@@ -27,7 +28,7 @@ function Booking() {
     <button>9.15 PM</button>
     </div>
     <div class="bookbutton">
-      <button>Book now</button>
+      <button class="booknow">Book now</button>
     </div>
     
     </div>

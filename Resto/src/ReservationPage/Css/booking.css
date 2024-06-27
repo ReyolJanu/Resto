@@ -9,4 +9,32 @@
 .preferedtime{
     display: flex;
 }
+h1{
+    text-align: center;
+}
+label{
+    font-size: 18px;
+    margin:5px;
+}
+input{
+    margin: 5px;
+}
 
+.booknow:hover {
+    background-color: black;
+    color:white;
+}
+.booknow{
+  color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(87, 3, 3);
+    text-align: center;
+}
+.frm{
+   
+}

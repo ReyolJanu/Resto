@@ -4,7 +4,7 @@ import './table.css';
 
 
 export default function RoundTable({tablename}) {
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState("brown");
   const [hover, setHover] = useState(false);
   
   const buttonStyle = {
