@@ -3,7 +3,7 @@ import '/src/ReservationPage/Css/tables.css';
 import tablelay from '/src/ReservationPage/Images/restaurant1.png';
 import MediumTable from './TableTypes/MediumTable';
 import RoundTable from './TableTypes/RoundTable';
-//import PartyTable from './TableTypes/PartyTable';
+import PartyTable from './TableTypes/PartyTable';
 import CoupleTable from './TableTypes/CoupleTable';
 
  
@@ -23,19 +23,46 @@ import CoupleTable from './TableTypes/CoupleTable';
      </div>
 
      <div class="col2">
-     <div class="vl"></div>
-     <div class="vl"></div>
-     </div>
+     <div class="vl-l"></div>
+     <div class="vl-l"></div>
 
-     <div class="col3">
-     <RoundTable tablename="Table1"/>
-     
-     <RoundTable tablename="Table2"/>
-     
-     <RoundTable tablename="Table3"/>
-     
-     
      </div>
+    <div class="col3">
+      <div class="row1">
+         <div class="scol1">
+         <CoupleTable tablename="Table1"/>
+         </div>
+         <div class="vl-s"></div>
+         
+        <div class="scol2">
+        <CoupleTable tablename="Table1"/>
+        </div>
+        <div class="vl-s"></div>
+        <div class="scol3">
+          <PartyTable/>
+        </div>
+      </div>
+      <hr class="large"></hr>
+      
+      <div class="row2">
+      <RoundTable tablename="Table1"/>
+      <div class="vl-s2"></div>
+      <RoundTable tablename="Table1"/>
+      <div class="vl-s2"></div>
+      <RoundTable tablename="Table1"/>
+      
+      </div>
+      <hr class="large"></hr>
+      <div class="row3">
+      <RoundTable tablename="Table1"/>
+      <div class="vl-s2"></div>
+      <RoundTable tablename="Table1"/>
+      <div class="vl-s2"></div>
+      <RoundTable tablename="Table1"/>
+      
+      </div>
+    </div>
+     
 
      </div>
    )
