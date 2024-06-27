@@ -5,9 +5,9 @@ function Booking() {
   return (
     <div class="frm">
        <h1>Book a Table</h1>
-       <hr></hr>
+       <hr class="titleline"></hr>
     <label>Party Size</label><br></br>
-    <input type ="text"></input><br></br>
+    <input type ="text" placeholder='2 people'></input><br></br>
     
     <div class="dateandtime">
       <div class="date"> 
@@ -16,16 +16,16 @@ function Booking() {
       </div>
     <div class="time">
     <label>Time</label><br></br>
-    <input type="time"></input>
+    <input type="time" value="09:30"></input>
     </div>
     </div>
 
     <label>Prefered Time</label>
     <div class="preferedtime">
-    <button>9.15 PM</button>
-    <button>9.15 PM</button>
-    <button>9.15 PM</button>
-    <button>9.15 PM</button>
+    <button>9.15 AM</button>
+    <button>9.30 AM</button>
+    <button>9.45 AM</button>
+    <button>10.00 AM</button>
     </div>
     <div class="bookbutton">
       <button class="booknow">Book now</button>
