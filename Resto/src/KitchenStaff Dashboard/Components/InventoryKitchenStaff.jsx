@@ -53,7 +53,7 @@ const InventoryKitchenStaff = () => {
     <div className="inventory-dashboard">
       
       <table>
-        <thead>
+        <thead >
           <tr>
             <th>ID</th>
             <th>Item</th>
@@ -63,7 +63,7 @@ const InventoryKitchenStaff = () => {
             <th>Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody >
           {inventory.map((item) => (
             <tr key={item.id} className={item.quantity <= item.threshold ? 'low-stock' : ''}>
               <td>{item.id}</td>
