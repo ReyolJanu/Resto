@@ -3,33 +3,41 @@ import { useState } from "react";
 import './table.css';
 
 
-export default function CoupleTable({initcolor}) {
+export default function MediumTable({tablename}) {
   const [color, setColor] = useState("red");
+  const [hover, setHover] = useState(false);
+  
   const buttonStyle = {
    
     backgroundColor: color,
-    color: 'white', // Ensures text color is white for better contrast
-    border: 'none',
-    padding: '15px 39px',
+    border: '2px solid',
+    color: 'white', 
+    width: '70px',
+    height: '40px',
     cursor: 'pointer',
     fontSize: '16px',
-    borderRadius: '5px',
+    borderRadius: '20px',
+    transition: 'transform 0.3s ease, background-color 0.3s ease',
+    transform: hover ? 'scale(1.1)' : 'scale(1)',
+   
+     
+    
+    
   };
     
   return (
   
-  <div>
-        <div class="chairup" >
+  <div class="all-couple">
+        <div class="chairup-c" >
           <div></div>
-          <div></div>
-          <div></div>
+          
         </div>
     
-      <button style={buttonStyle} onClick={() => setColor("blue")}  > Table 1 </button>
-      <div class="chairdown" >
+     <div> <button style={buttonStyle} onClick={() => setColor("blue")} onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)} > {tablename} </button></div>
+      <div class="chairdown-c" >
           <div></div>
-          <div></div>
-          <div></div>
+          
         </div>
       </div>
       
