@@ -15,7 +15,6 @@ function Reservation() {
         <div class="tables"><Tables/></div> 
         <div class="booking"><Booking/></div> 
         </div>
-        <footer class="footer">Footer</footer>
       </div>
     </div>
   )
