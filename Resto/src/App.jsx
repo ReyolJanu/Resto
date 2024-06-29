@@ -1,27 +1,21 @@
-import React from 'react'
-import Admin from './Admin/Components/Admin'
-//import Routingdiv from './HostDashboard/Componenets/Routingdiv'
-// import Host from './HostDashboard/Componenets/Host'
 // import Reservation from './ReservationPage/Components/Reservation'
 // import KitchenStaff from './KitchenStaff Dashboard/Components/KitchenStaff'
-//import Host from './HostDashboard/Componenets/Host'
-//import Reservation from './ReservationPage/Components/Reservation'
+// import Host from './HostDashboard/Componenets/Host'
 //import { Customer } from './Customer Dashboard/Components/Customer'
 // import NewLandingpage from './LandingPage/NewLandingpage'
 //import ModalSample from './LandingPage/ModalSample'
+import Admin from './Admin/Components/Admin.jsx'
+
 
 
 export const App = () => {
   return (
     <>
-         
-
-
-         <KitchenStaff/>   
+        <Admin /> 
+        {/* <KitchenStaff/>    */}
         {/* <Host/>  */}
         {/* <Reservation/> */}
         {/* <Customer/>  */}
-        <Admin/> 
         {/* <Routingdiv/>  */}
         {/* <NewLandingpage />    */}
 
