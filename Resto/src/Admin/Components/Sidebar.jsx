@@ -1,12 +1,12 @@
 import React from 'react'
-import {BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsListCheck, BsMenuButtonWideFill, BsFillGearFill} from 'react-icons/bs'
+import {BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsListCheck, BsMenuButtonWideFill, BsFillGearFill,BsPersonCircle } from 'react-icons/bs'
 
 function Sidebar() {
   return (
     <aside id="sidebar">
       <div className="sidebar-title">
         <div className="sidebar-brand">
-            <BsCart3 className='icon_header'/>SHOP
+        <BsPersonCircle className='icon'/>Admin
         </div>
         <span className='icon close_icon'>X</span>
       </div>
@@ -18,27 +18,23 @@ function Sidebar() {
         </li>
         <li className="sidebar-list-item">
           <a href="">
-            <BsFillArchiveFill className='icon'/> Products
+            <BsFillArchiveFill className='icon'/> Restaurants
           </a>
         </li>
         <li className="sidebar-list-item">
           <a href="">
-            <BsFillGrid3X3GapFill className='icon'/> Categories
+            <BsFillGrid3X3GapFill className='icon'/> Customers
+          </a>
+        </li>
+
+        <li className="sidebar-list-item">
+          <a href="">
+            <BsListCheck className='icon'/> Notification
           </a>
         </li>
         <li className="sidebar-list-item">
           <a href="">
-            <BsPeopleFill className='icon'/> Customers
-          </a>
-        </li>
-        <li className="sidebar-list-item">
-          <a href="">
-            <BsListCheck className='icon'/> Inventory
-          </a>
-        </li>
-        <li className="sidebar-list-item">
-          <a href="">
-            <BsMenuButtonWideFill className='icon'/> Reports
+            <BsMenuButtonWideFill className='icon'/> Reservations
           </a>
         </li>
         <li className="sidebar-list-item">
