@@ -1,0 +1,107 @@
+
+.all div{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+.all{
+ 
+  margin-right: 50px;
+}
+.chairup div,.chairdown div{
+  width: 0.1%;
+  border: 12px solid rgb(0, 0, 0);
+  padding: 0%;
+  margin: 10px;
+  /* border-radius: 2px; */
+  border-radius: 100px 100px 0 0;
+  
+  }
+  .chairdown div{
+    
+    border-radius:  0 0 100px 100px;
+  }
+  
+  .chairup ,.chairdown{
+      display: flex;
+  }
+ 
+/* for round table */
+.circle-container {
+  position: relative;
+  width:134px;
+  height: 134px;
+  
+  
+  
+}
+
+
+
+.square {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+.square1 {
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square2 {
+  top: 3%;
+  left: -1%;
+  transform: rotate(42deg);
+}
+
+.square3 {
+  top: 3%;
+  right: 0%;
+  transform: rotate(47deg);
+}
+
+.square4 {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.square5 {
+  top: 73%;
+  right: 2%;
+  transform: rotate(45deg);
+ 
+}
+
+.square6 {
+  top: 72%;
+  left: 0;
+  transform: rotate(45deg);
+  /* transform: translate(-50%, -50%); */
+}
+
+.square7 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.square8 {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+/* Couple Table */
+.chairup-c div,.chairdown-c div{
+  width: 0.1%;
+  border: 12px solid rgb(0, 0, 0);
+  padding: 0%;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  margin-left: 23px;
+  
+  
+  }
+  

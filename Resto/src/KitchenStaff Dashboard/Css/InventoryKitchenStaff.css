@@ -1,21 +1,69 @@
 /* InventoryComponent.css */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--Poppins);
+  user-select: none;
+} 
+:root {
+  --body-background: #d9d9d9;
+  --gray: rgb(80, 80, 80);
+  --grayTable:#8b8b8b;
+  --red: #bd2026;
+  --black: #121212;
+  --white: white;
+  --resto-word: "Oswald", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --Poppins: "Poppins", sans-serif;
+  --Martel: "Martel Sans", sans-serif;
+}
 
 .inventory-dashboard {
     width: 80%;
     margin-top:2.5%;
     margin-left: 10%;
-    /* margin: 0 auto; */
+    /* margin: 0 auto;  */
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } 
+
+  .inventory-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: auto;
   }
+
+  .inventory-dashboard   {
+    width:100%; 
+      display:flex; 
+     flex-direction:column;
+     margin-top:20px;
+     align-items:center;
+      overflow-y: auto; 
+      max-height: 600px;   
+ }
+
   
-  h2 {
-    margin-bottom: 20px;
-    color: #333;
+  .h1 {
+    margin-bottom: 40px;
+    color: #bd2026;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+
   }
   
   table {
@@ -24,7 +72,7 @@
   }
   
   thead {
-    background-color: #007bff;
+    background-color: #584e4e;
     color: white;
   }
   
@@ -38,7 +86,7 @@
   }
   
   tbody tr.low-stock {
-    background-color: #fff3cd;
+    background-color: #ddd8d9;
   }
   
   tbody tr .status {
