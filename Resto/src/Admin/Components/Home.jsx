@@ -58,15 +58,17 @@ function Home() {
       <div className="main-cards">
         <div className="card">
           <div className="card-inner">
-            <h3>PRODUCTS</h3>
+            <h3>RESERVATIONS</h3>
             <BsFillArchiveFill className='card-icon'/>
           </div>
           <h1>300</h1>
         </div>
 
         <div className="card">
-          <div className="card-inner">
-            <h3>CATEGORIES</h3>
+          <div className="car+
+          
+          +d-inner">
+            <h3>RESTAURANTS</h3>
             <BsFillGrid3X3GapFill className='card-icon'/>
           </div>
           <h1>12</h1>
