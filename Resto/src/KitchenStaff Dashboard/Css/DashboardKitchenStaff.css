@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --body-background: #d9d9d9;
   --gray: rgb(80, 80, 80);
   --grayTable:#8b8b8b;
@@ -9,10 +9,10 @@
   --Roboto: "Roboto", sans-serif;
   --Poppins: "Poppins", sans-serif;
   --Martel: "Martel Sans", sans-serif;
-}
+} */
 
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   outline: none;
@@ -21,10 +21,10 @@
   box-sizing: border-box;
   font-family: var(--Poppins);
   user-select: none;
-} 
+}  */
 
 
-/* .kitchen-dashboard {
+ /* .K-Staff-kitchen-dashboard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,10 +33,10 @@
   margin: 0 auto;
   padding: 20px;
   overflow: auto;
+}  */
 
 
-} */
-.kitchen-dashboard {
+.K-Staff-kitchen-dashboard {
   
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
   padding: 20px;
   overflow: auto;
 
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -56,30 +56,38 @@
 
 
 
-th, td {
+.K-Staff-tr th {
   padding: 10px;
   cursor: pointer;
+  border: 1px solid #ddd;
 }
-tbody tr {
+
+.K-Staff-tbodytr td {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.K-Staff-tbodytr tr {
   transition: background-color 0.3s ease;
 }
 
 
-tbody tr.accept {
+.K-Staff-tbodytr tr.accept {
   background-color: #d4edda;
 }
 
-tbody tr.cancel {
+.K-Staff-tbodytr tr.cancel {
   background-color: #f8d7da;
 }
-tbody tr:hover {
-  background-color: #e0e0e0;
+.K-Staff-tbodytr tr:hover {
+  background-color: #c4c4c4;
 }
 
 
 
-.kitchen-dashboard{
-   width:100%;
+.K-Staff-kitchen-dashboard{
+   width:auto;
     display:flex;
     flex-direction:column;
     margin-top:20px;
@@ -89,8 +97,8 @@ tbody tr:hover {
 }
 
 
-.order-detail{
-  width: 100%;
+.K-Staff-order-detail{
+  width: auto;
   display:flex;
   flex-direction:column;
   margin-top:10px;
@@ -100,7 +108,7 @@ tbody tr:hover {
 }
 
 
-.order-detail {
+.K-Staff-order-detail {
   padding: 10px;
   background-color: #f0f0f0;
   border: 1px solid #ddd;
@@ -108,15 +116,15 @@ tbody tr:hover {
   text-align: left;
 }
 
-.order-detail h2 {
+.K-Staff-order-detail h2 {
   margin-bottom: 10px;
 }
 
-.order-detail p {
+.K-Staff-order-detail p {
   margin: 5px 0;
 }
 
-button {
+.K-Staff-button {
   margin: 10px;
   padding: 10px 20px;
   border: none;
@@ -124,12 +132,12 @@ button {
   cursor: pointer;
 }
 
-button:first-of-type {
+.K-Staff-button:first-of-type {
   background-color: #28a745;
   color: white;
 }
 
-button:last-of-type {
+.K-Staff-button:last-of-type {
   background-color: #dc3545;
   color: white;
 }

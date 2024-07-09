@@ -49,12 +49,12 @@ const InventoryKitchenStaff = () => {
   return (
 <>
 
-    <div className="h1"> <h1>Inventory Management</h1> </div>
-    <div className="inventory-dashboard">
+    <div className="K-Staff-h1"> <h1>Inventory Management</h1> </div>
+    <div className="K-Staff-inventory-dashboard">
       
-      <table>
-        <thead >
-          <tr>
+      <table className='K-Staff-table'>
+        <thead className='K-Staff-thead' >
+          <tr className='K-Staff-thead-tr'>
             <th>ID</th>
             <th>Item</th>
             <th>Quantity</th>
@@ -63,15 +63,15 @@ const InventoryKitchenStaff = () => {
             <th>Status</th>
           </tr>
         </thead>
-        <tbody >
+        <tbody className='K-Staff-tbody'>
           {inventory.map((item) => (
-            <tr key={item.id} className={item.quantity <= item.threshold ? 'low-stock' : ''}>
+            <tr key={item.id} className={item.quantity <= item.threshold ? 'K-Staff-low-stock' : ''}>
               <td>{item.id}</td>
               <td>{item.name}</td>
               <td>{item.quantity}</td>
               <td>{item.unit}</td>
               <td>{item.expiry}</td>
-              <td className="status">{item.quantity <= item.threshold ? 'Low Stock' : 'In Stock'}</td>
+              <td className="K-Staff-status">{item.quantity <= item.threshold ? 'Low Stock' : 'In Stock'}</td>
             </tr>
           ))}
         </tbody>

@@ -19,7 +19,7 @@ const Notification = () => {
   };
 
   return (
-    <div className="notification-list">
+    <div className="K-Staff-notification-list">
       <h2>Kitchen Staff - Food Order Notifications</h2>
       {notifications.map(notification => (
         <NotificationItem 

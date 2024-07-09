@@ -1,5 +1,5 @@
 /* NotificationItem.css */
-.notification-item {
+.K-Staff-notification-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,20 +10,20 @@
     background-color: #fff;
   }
   
-  .notification-item.pending {
+  .K-Staff-notification-item.pending {
     border-left: 5px solid #f39c12; /* Orange for pending */
   }
   
-  .notification-item.forwarded {
+  .K-Staff-notification-item.forwarded {
     border-left: 5px solid #27ae60; /* Green for forwarded */
   }
   
-  .notification-item p {
+  .K-Staff-notification-item p {
     flex: 1;
     margin: 0;
   }
   
-  .notification-item button {
+  .K-Staff-notification-item button {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -32,11 +32,11 @@
     cursor: pointer;
   }
   
-  .notification-item button:hover {
+  .K-Staff-notification-item button:hover {
     background-color: #584e4e;
   }
   
-  .notification-item span {
+  .K-Staff-notification-item span {
     color: #27ae60;
     font-weight: bold;
   }

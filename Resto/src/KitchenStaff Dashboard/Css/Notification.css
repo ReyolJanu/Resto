@@ -1,5 +1,5 @@
 /* NotificationList.css */
-.notification-list {
+.K-Staff-notification-list {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -7,9 +7,10 @@
   background-color: #f9f9f9;
 }
 
-.notification-list h2 {
+.K-Staff-notification-list h2 {
   text-align: center;
   margin-bottom: 50px;
+  color: #bd2026;
 }
 
 /* NotificationItem.css */

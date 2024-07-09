@@ -63,20 +63,20 @@ const DashboardKitchenStaff = () => {
       </table>
       </div> */}
    
-    <div className="kitchen-dashboard">
+    <div className="K-Staff-kitchen-dashboard">
     
-      <table >
-        <thead>
-          <tr>
+      <table className='K-Staff-table'>
+        <thead className='K-Staff-thead'>
+          <tr className='K-Staff-tr'>
             <th>ID</th>
             <th>Customer Name</th>
             <th>Item Name</th>
             <th>Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='K-Staff-tbodytr'>
           {orders.map((order) => (
-            <tr
+            <tr 
               key={order.id}
               className={order.status}
               onClick={() => handleOrderClick(order)}
@@ -91,17 +91,17 @@ const DashboardKitchenStaff = () => {
       </table>
 
     </div>
-    <div className="order data">
+    <div className="K-Staff-order data">
       {selectedOrder && (
-        <div className="order-detail">
+        <div className="K-Staff-order-detail">
           <h2>Order Details</h2>
           <p><strong>ID:</strong> {selectedOrder.id}</p>
           <p><strong>Customer Name:</strong> {selectedOrder.customerName}</p>
           <p><strong>Item Name:</strong> {selectedOrder.itemName}</p>
           <p><strong>Status:</strong> {selectedOrder.status}</p>
-          <div className="action-buttons">
-            <button onClick={() => handleStatusChange('accept')}>Accept</button>
-            <button onClick={() => handleStatusChange('cancel')}>Cancel</button>
+          <div className="K-Staff-action-buttons">
+            <button className='K-Staff-button' onClick={() => handleStatusChange('accept')}>Accept</button>
+            <button className='K-Staff-button' onClick={() => handleStatusChange('cancel')}>Cancel</button>
           </div>
         </div>
       )}

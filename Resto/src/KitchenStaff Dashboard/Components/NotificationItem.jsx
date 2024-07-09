@@ -4,7 +4,7 @@ import '../Css/NotificationItem.css';
 
 const NotificationItem = ({ notification, onForward }) => {
   return (
-    <div className={`notification-item ${notification.status}`}>
+    <div className={`K-Staff-notification-item ${notification.status}`}>
       <p>{notification.message}</p>
       {notification.status === 'pending' && (
         <button onClick={() => onForward(notification.id)}>Forward to Host</button>
