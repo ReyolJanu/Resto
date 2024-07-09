@@ -1,0 +1,410 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: "Oswald", sans-serif; for RESTO Word
+font-family: "Roboto", sans-serif;
+font-family: "Poppins", sans-serif;
+font-family: "Martel Sans", sans-serif; */
+
+
+:root {
+    --body-background: #d9d9d9;
+    --gray:rgb(80, 80, 80);
+    --red:#bd2026;   
+    --black:#121212;   
+    --white:white;
+    --resto-word: "Oswald", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --Poppins: "Poppins", sans-serif;
+    --Martel: "Martel Sans", sans-serif;
+    /* font-family: var(--main-headingFont);   ==calling method*/
+}
+/* ----------------------------------------Nav Bar --------------------------------------*/
+* {
+    
+    font-family: var(--Poppins);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    background-color: var(--body-background);
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it's above other content */
+    background-color: var(--white); /* Set your desired background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px; /* Adjust padding as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+   
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+a {
+    padding: 8px 12px;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.2s ease, border-radius 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+a:hover,
+a:active {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+.nav-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ----------------------------------------Home --------------------------------------*/
+.Home-content {
+    padding-top: 10%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 9; /* Higher z-index to ensure visibility */
+}
+.Resto{
+    font-family: var(--Poppins);
+    font-weight: 700;
+    color: var(--white);
+    font-size: 100px;
+
+}
+.home-btn{
+    width: 9%;
+    margin-top: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--white);
+    font-weight: 500;
+    background-color: var(--red);
+    border-radius: 100px;
+    border: none;
+    border: 2px solid var(--white);
+}
+.home-btn:hover{
+    color: var(--red);
+    background-color:var(--white);
+    border:2px solid var(--red);
+    font-weight: 500;
+}
+
+/* ----------------------------------------sec2 --------------------------------------*/
+.sec2{
+    height: 100vh;
+    display: flex;
+    width: 100%;  
+}
+.sec2-div1, .sec2-div2 {
+    width: 33%;
+}
+.sec2-div1{
+    transform: translateX(-90%);
+}
+.sec2-div2{
+    margin-top: 5%;
+    transform: translateX(-80%);
+}
+.sec2-div3{
+    margin-top: 8%;
+    width: 50%;
+    transform: translateX(-50%);
+}
+.blob{
+    height: 110%;
+    width: auto;
+}
+
+.sec2-heading{
+    color: var(--red);
+    font-family: var(--po);
+    font-size: 40px;
+}
+.sec2-para{
+    margin-top:5%;
+    color: var(--black);
+}
+.sec2-btn{
+    margin-top: 10%;
+    height: 50px;
+    width: 150px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 100px;
+    border: none;
+    border: 1px solid var(--red);
+}
+.sec2-btn:hover{
+    color: var(--red);
+    background-color:var(--body-background) ;
+    border:1px solid var(--red);
+    font-weight: 500;
+}
+.food-image {
+    animation: rotateImage 100s infinite linear; /* Rotate the image */
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------------------------------sec3 --------------------------------------*/
+.sec3 {
+    gap: 20px;
+    padding-top: 80px; /* Adjust or remove as needed */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.container1,
+.container2 {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 250px; /* Set the desired height */
+    
+}
+
+.container1 > div,
+.container2 > div {
+    flex-basis: 33.33%; /* Equal distribution without subtraction */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+   
+}
+.sec3-image{
+    margin: auto;
+    width: 100%;
+    height: 70%;
+    background-color:var(--gray);
+}
+/* ----------------------------------------sec4 --------------------------------------*/
+.sec4{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-background);
+    align-items: center;
+
+}
+.sec4-heading{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.heading{
+    color: var(--red);
+    font-family: var(--Poppins);
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.sub-heading{
+    font-family: var(--Poppins);
+    color: var(--black);
+    font-size: 20px;  
+    align-items: center;
+    
+}
+.sec4-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding-right: 80px;
+    padding-left: 80px;
+    gap: 20px;
+}
+.card1, .card2, .card3{
+    justify-content: center;
+    width: 33.33%;
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+.card-heading{
+    font-family: var(--Poppins);
+    color: var(--red);
+    font-weight: 600;
+    font-size: 30px;
+}
+.card-desc{
+    font-family: var(--Poppins);
+    color: var(--gray);
+    font-size: 20px;
+    font-weight: 500;
+}
+.click-icon{
+    height: auto;
+    width: 60px;
+    
+}
+.sec4-register{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.register-hotal, .register-customer{
+    width: 40%;
+    height: 60%;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;  
+}
+
+.sec4-btn{
+    height: 50px;
+    width: 150px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 100px;
+    border: none;
+    border: 1px solid var(--red);
+}
+.sec4-btn:hover{
+    color: var(--red);
+    background-color:var(--white) ;
+    border:1px solid var(--red);
+    font-weight: 500;
+}
+
+/* ----------------------------------------sec5 --------------------------------------*/
+
+.sec5{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    padding-top: 9%;
+    background-color: var(--body-background);
+}
+.sec5-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer-btn{
+    border-radius: 100px;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.Footer-mail-box{
+    padding-top: 35px;
+    padding-left: 30%;
+    padding-right: 30%;
+  
+}
+.Footer-mail{
+    border: solid 1px var(--gray);
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+input{
+    border: none;
+    width: 60%;
+    background-color:var(--body-background);
+}
+.Footer-contact-info{
+    gap: 25px;
+    padding: 80px;
+    width: 100%;
+    display: flex;
+}
+.Footer-contact-sec1{
+    text-align: left;
+    width: 25%;
+    color: var(--gray);
+}
+.Footer-heading{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--red);
+}
+.desc{
+    color: var(--sub-content);
+    font-weight: 500;
+}
+.Footer-btn {
+    color: white;
+    background-color: var(--red);
+    border-radius: 100px;
+    border: none;
+    border: 1px solid #bd2026;
+}
+.Footer-btn:hover{
+    color: var(--red);
+    background-color:var(--body-background);
+    border:1px solid var(--red);
+    font-weight: 500;
+}
+.Footer-heading{
+    font-family: var(--gray);
+}
+/* 
+----------------------------------model----------------------------------- */
+
+/* ModalStyles.css */
