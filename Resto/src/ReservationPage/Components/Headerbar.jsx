@@ -50,10 +50,10 @@ export default function NewLandingpage() {
     };
 
     return (
-        <div className='main-div'>
-             <div className="navbar">
-                <div className="nav-logo"><img src={logo} className='logo' alt='Logo' /></div>
-                <div className="nav-links">
+        <div className='header-main-div'>
+             <div className="header-navbar">
+                <div className="header-nav-logo"><img src={logo} className='header-logo' alt='Logo' /></div>
+                <div className="header-nav-links">
                     <ul>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#sec2'>Login</a></li>

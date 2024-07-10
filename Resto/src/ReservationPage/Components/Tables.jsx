@@ -9,26 +9,26 @@ import CoupleTable from './TableTypes/CoupleTable';
  
  function Tables() {
    return (
-     <div class="main">
+     <div class="tables-main">
      {/* <img src={tablelay} alt="Restaurant" id="tlayout"/> */}
-    <div class="col1">
+    <div class="tables-col1">
      <MediumTable tablename="Medium-T1"/>
-     <hr class="short"></hr>
+     <hr class="tables-short"></hr>
      <MediumTable tablename="Medium-T2"/>
-     <hr class="short"></hr>
+     <hr class="tables-short"></hr>
      <MediumTable tablename="Medium-T3"/>
-     <hr class="short"></hr>
+     <hr class="tables-short"></hr>
      <MediumTable tablename="Medium-T4"/>
-     <hr class="short"></hr>
+     
      </div>
 
-     <div class="col2">
+     <div class="tables-col2">
      <div class="vl-l"></div>
      <div class="vl-l"></div>
 
      </div>
-    <div class="col3">
-      <div class="row1">
+    <div class="tables-col3">
+      <div class="tables-row1">
          <div class="scol1">
          <CoupleTable tablename="Couple1"/>
          </div>
@@ -42,9 +42,9 @@ import CoupleTable from './TableTypes/CoupleTable';
           <PartyTable tablename="Party-Table"/>
         </div>
       </div>
-      <hr class="large"></hr>
+      <hr class="tables-large"></hr>
       
-      <div class="row2">
+      <div class="tables-row2">
       <RoundTable tablename="Round-T1"/>
       <div class="vl-s2"></div>
       <RoundTable tablename="Round-T2"/>
@@ -52,8 +52,8 @@ import CoupleTable from './TableTypes/CoupleTable';
       <RoundTable tablename="Round-T3"/>
       
       </div>
-      <hr class="large"></hr>
-      <div class="row3">
+      <hr class="tables-large"></hr>
+      <div class="tables-row3">
       <RoundTable tablename="Round-T4"/>
       <div class="vl-s2"></div>
       <RoundTable tablename="Round-T5"/>

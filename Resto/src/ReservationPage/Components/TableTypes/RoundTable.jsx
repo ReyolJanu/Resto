@@ -30,18 +30,18 @@ export default function RoundTable({tablename}) {
   return (
   
   <div class="all">
-    <div class="circle-container">
+    <div class="table-circle-container">
     
     <button style={buttonStyle} onClick={() => setColor("blue")} onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)} > {tablename} </button>
-    <div class="square square1"></div>
-    <div class="square square2"></div>
-    <div class="square square3"></div>
-    <div class="square square4"></div>
-    <div class="square square5"></div>
-    <div class="square square6"></div>
-    <div class="square square7"></div>
-    <div class="square square8"></div>
+    <div class="roundtable-square roundtable-square1"></div>
+    <div class="roundtable-square roundtable-square2"></div>
+    <div class="roundtable-square roundtable-square3"></div>
+    <div class="roundtable-square roundtable-square4"></div>
+    <div class="roundtable-square roundtable-square5"></div>
+    <div class="roundtable-square roundtable-square6"></div>
+    <div class="roundtable-square roundtable-square7"></div>
+    <div class="roundtable-square roundtable-square8"></div>
   </div>
     
     

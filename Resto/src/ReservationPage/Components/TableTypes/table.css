@@ -26,7 +26,7 @@
   }
  
 /* for round table */
-.circle-container {
+.table-circle-container {
   position: relative;
   width:134px;
   height: 134px;
@@ -37,58 +37,58 @@
 
 
 
-.square {
+.roundtable-square {
   position: absolute;
   width: 30px;
   height: 30px;
   background-color: black;
 }
 
-.square1 {
+.roundtable-square1 {
   top: -3%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.square2 {
+.roundtable-square2 {
   top: 3%;
   left: -1%;
   transform: rotate(42deg);
 }
 
-.square3 {
+.roundtable-square3 {
   top: 3%;
   right: 0%;
   transform: rotate(47deg);
 }
 
-.square4 {
+.roundtable-square4 {
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
 }
 
-.square5 {
+.roundtable-square5 {
   top: 73%;
   right: 2%;
   transform: rotate(45deg);
  
 }
 
-.square6 {
+.roundtable-square6 {
   top: 72%;
   left: 0;
   transform: rotate(45deg);
   /* transform: translate(-50%, -50%); */
 }
 
-.square7 {
+.roundtable-square7 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
 }
 
-.square8 {
+.roundtable-square8 {
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%);
