@@ -1,25 +1,39 @@
 
-.dateandtime{
+.booking-dateandtime{
     display: flex;
     
 }
-.date,.time{
-    width: 150px;
+.booking-date,.booking-time{
+    width: 170px;
     padding-right:5%;
 }
-.preferedtime{
-    display: flex;
+#booking-time{
+    margin-top: 9px;
+    color:rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    width:160px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid rgb(110, 110, 110);
+
 }
-h1{
+#booking-time:hover {
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+.booking-title{
     text-align: center;
 }
-label{
+.booking-frm label{
     font-weight: bold;
     font-size: 18px;
     
     
 }
-input{
+.booking-frm input{
     
     width: 80%;
     padding: 5px;
@@ -31,11 +45,11 @@ input{
     
 }
 
-.booknow:hover {
+.booking-booknow:hover {
     background-color: rgb(13, 99, 4);
     color:white;
 }
-.booknow{
+.booking-booknow{
     text-align: center;
     width: 470px;
     margin-top: 10px;
@@ -49,20 +63,18 @@ input{
     background-color: rgb(0, 0, 0);
     
 }
-.frm{
-    margin-top: 50px;
+.booking-frm{
+    margin-top: 35px;
     margin-left: 50px;
    
 }
-hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.preferedtime{
+
+
+.booking-preferredtimes{
     margin-top: 10px;
     margin-bottom: 40px;
 }
-.preferedtime button{
+.booking-preferredtime{
     font-size: 16px;
     color: white;
     padding: 7px 10px;
@@ -73,12 +85,66 @@ hr{
     background-color: rgb(154, 4, 4);
     text-align: center;
 }
-.titleline{
+.booking-preferredtime:hover {
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+.booking-titleline{
    
     border: 1px solid rgb(120, 120, 120);
     margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
-.foodenable{
+.booking-foodenable{
+    width: 500px;
     display: flex;
+
+}
+.booking-foodnameandquan{
+    display: flex;
+    margin-top: 10px;
+    
+}
+#booking-quantity,#booking-foodName{
+    color:rgb(255, 255, 255);
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+#booking-quantity{ 
+    width:50px;
+}
+.booking-btnfood-submit{
+    width:65px;
+    height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(110, 0, 0);
+}
+.booking-textarea{
+    margin-top: 5px;
+    border: 2px solid ;
+
+
+}
+.booking-btnclear{
+    width:65px;
+    height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(118, 0, 0);
 }

@@ -5,7 +5,7 @@ import Reservation from './ReservationPage/Components/Reservation'
 // import NewLandingpage from './LandingPage/NewLandingpage'
 //import ModalSample from './LandingPage/ModalSample'
 //import Admin from './Admin/Components/AdminDB/Admin'
-// import Headerbar from './ReservationPage/Components/Headerbar'
+//import Headerbar from './ReservationPage/Components/Headerbar'
 
 
 

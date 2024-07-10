@@ -12,10 +12,10 @@ function Reservation() {
     <div>
       
       <div class="container">
-        <header class="header"><Headerbar/></header>
-        <div class="content"> 
-        <div class="tables"><Tables/></div> 
-        <div class="booking"><Booking/></div> 
+        <header class="reservation-header"><Headerbar/></header>
+        <div class="reservation-content"> 
+        <div class="reservation-tables"><Tables/></div> 
+        <div class="reservation-booking"><Booking/></div> 
         </div>
       </div>
     </div>
